@@ -1,115 +1,128 @@
 use std::collections::HashMap;
-use std::collections::HashSet;
-use rocket::serde::Serialize;
-use rocket::serde::Deserialize;
+// use std::collections::HashSet;
+use serde::{Serialize, Deserialize};
 
-#[derive(Deserialize, Serialize)]
-pub struct RangeWeightsTxsMempool {
-    // Crear un hashmap de rangos de pesos y numero de transacciones por rango
-    pub ranges:HashMap<String, u64>,
-    // pub ranges:HashMap<String, Vec<String>>,
+#[derive(Serialize, Deserialize)]
+pub struct AscenDescenForTxid {
+    pub descen: HashMap<String , Vec<String>>,
+    pub ascen: HashMap<String , Vec<String>>,
 }
-impl RangeWeightsTxsMempool {
-    // Crear un nuevo estado del mempool
-    pub fn new() -> RangeWeightsTxsMempool {
-        RangeWeightsTxsMempool {
-            ranges: HashMap::new(),
+impl AscenDescenForTxid {
+    pub fn new() -> AscenDescenForTxid {
+        AscenDescenForTxid {
+            descen: HashMap::new(),
+            ascen: HashMap::new(),
         }
     }
 
+    pub fn delete (&mut self) {
+        self.descen.clear();
+        self.ascen.clear();
+    }
 }
 
+
+#[derive(Serialize, Deserialize)]
+// Estructura de datos para almacenar los datos de las Txs de la mempool
+pub struct RawMempool {
+    pub data: HashMap<String, MempoolDat>,
+}
+impl RawMempool {
+    pub fn new() -> RawMempool {
+        RawMempool {
+            data: HashMap::new(),
+        }
+    }
+    pub fn txid_exists(&self, txid: &str) -> bool {
+        self.data.contains_key(txid)
+    }
+    // pub fn get_mempooldat(&self, txid: &str) -> MempoolDat {
+    //     self.data.get(txid).unwrap().clone()
+    // }
+}
+
+#[derive(Serialize, Deserialize, Clone)]
+pub struct MempoolDat {
+    pub vsize: u64,
+    pub weight: u64,
+    pub time: u64,
+    pub fees_base: f64,
+    pub num_ascen: u64,
+    pub num_descen: u64,
+} 
+impl MempoolDat {
+    pub fn new( vsize: u64, weight: u64, time: u64, fees_base: f64,
+                num_ascen: u64, num_descen: u64) -> MempoolDat {
+        MempoolDat {
+            vsize,
+            weight,
+            time,
+            fees_base,
+            num_ascen,
+            num_descen,
+        }
+    }
+}
+
+// Estructura de datos para almacenar  datos varios de la mempool
 pub struct MempoolVarInfo {
-    // pub max_weight: u64,
-    // pub min_weight: u64,
     pub last_block: String,
 }
 impl MempoolVarInfo {
     pub fn new(last_block: String) -> MempoolVarInfo {
         MempoolVarInfo {
-            // max_weight,
-            // min_weight,
             last_block,
         }
     }
 
-    pub fn set_last_block(&mut self, last_block: String) {
-        self.last_block = last_block;
-    }
-
 }
 
-// Estructura para los valores que devuelve getrawmempool true y getmempoolentry
-#[derive(Deserialize, Serialize)]
-#[derive(Debug)]
-pub struct MempoolEntry {
-    pub vsize: u64,
-    pub weight: u64,
-    pub time: u64,
-} 
-impl MempoolEntry {
-    pub fn new(vsize: u64, weight: u64, time: u64) -> MempoolEntry {
-        MempoolEntry {
-            vsize,
-            weight,
-            time,
-        }
-    }
-}  
-
-
-pub struct  GetMempoolEntryTx {
-    pub entries: HashMap<String, MempoolEntry>,
+// Estructura de datos para almacenar weights y txs de la mempool
+pub struct WeightTX {
+    pub weight_tx:HashMap<u64, Vec<String>>,
 }
-impl GetMempoolEntryTx {
-    pub fn new() -> GetMempoolEntryTx {
-        GetMempoolEntryTx {
-            entries: HashMap::new(),
+impl WeightTX {
+    pub fn new() -> WeightTX {
+        WeightTX {
+            weight_tx: HashMap::new(),
         }
     }
 
-    pub fn add_entry(&mut self, wtxid: String, entry: MempoolEntry) {
-        self.entries.insert(wtxid, entry);
+    pub fn erase_weight_tx(&mut self) {
+        self.weight_tx.clear();
+    }
+
+    pub fn sort_by_weight(&mut self) {
+        let weight_tx = self.weight_tx.clone();
+        let mut weight_tx_sorted = HashMap::new();
+        let mut weights: Vec<u64> = weight_tx.keys().cloned().collect();
+        weights.sort();
+        weights.reverse();
+        for weight in weights {
+            weight_tx_sorted.insert(weight, weight_tx.get(&weight).unwrap().clone());
+        }
+        self.weight_tx = weight_tx_sorted;
     }
 
 }
 
-
-// Estructura para getGetRawMempoolTruetrue.  
-// Un HashMap de wtxid (clave) a MempoolEntry (valor).
-pub struct GetRawMempoolTrue{
-    pub entries: HashMap<String, MempoolEntry>,
+// Estructura de datos para almacenar rangos de pesos y txs de la mempool
+pub struct RangeWeights  {
+    pub rang_data:HashMap<u64, u64>,
 }
-impl GetRawMempoolTrue{
-    pub fn new() -> GetRawMempoolTrue{
-        GetRawMempoolTrue{
-            entries: HashMap::new(),
+impl RangeWeights  {
+    pub fn new() -> RangeWeights  {
+        RangeWeights  {
+            rang_data: HashMap::new(),
         }
     }
 
-    pub fn add_entry(&mut self, wtxid: String, entry: MempoolEntry) {
-        self.entries.insert(wtxid, entry);
+    pub fn erase_range_data(&mut self) {
+        self.rang_data.clear();
+    }
+
+    pub fn add_range_data(&mut self, weight: u64, num: u64) {
+        self.rang_data.entry(weight).or_insert(num);
     }
 
 }
-
-
-// Estructura para almacenar el estado del mempool
-pub struct GetRawMempoolFalse {
-    pub entries: HashSet<String>,
-}
-impl GetRawMempoolFalse {
-    // Crear un nuevo estado del mempool
-    pub fn new() -> GetRawMempoolFalse {
-        GetRawMempoolFalse {
-            entries: HashSet::new(),
-        }
-    }
-
-    pub fn add_entry(&mut self, entry: String) {
-        self.entries.insert(entry);
-    }
-
-
-}
-

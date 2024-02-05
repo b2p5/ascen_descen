@@ -1,173 +1,200 @@
-
-use crate::mempool_data::GetRawMempoolTrue;
-use crate::mempool_data::GetRawMempoolFalse;
-use crate::mempool_data::MempoolEntry;
-use crate::mempool_data::RangeWeightsTxsMempool;
-use crate::mempool_data::MempoolVarInfo;
-use crate::mempool_data::GetMempoolEntryTx;
-use crate::Instant;
-
-use bitcoincore_rpc::RpcApi;
 use bitcoincore_rpc::Client;
+use bitcoincore_rpc::RpcApi;
 use serde_json::Value;
 use std::sync::{Arc, Mutex};
+use bitcoincore_rpc::Error as RpcError;
+use std::io;
 
-// const NUM_WEIGHTS: u64 = 10000;
-const NUM_RANGOS: u64 = 10;
+use crate::mempool_data::RawMempool;
+use crate::mempool_data::MempoolDat;
+use crate::mempool_data::MempoolVarInfo;
+use crate::mempool_data::WeightTX;
+use crate::mempool_data::RangeWeights;
+
+const NUM_TXS_X_RANGE: u64 = 200;
 
 
-pub fn get_range_weights_txs_mempool(get_raw_mempool_true:  &Arc<Mutex<GetRawMempoolTrue>>, 
-                                     range_weights_txs_mempool_clone: Arc<Mutex<RangeWeightsTxsMempool>>)   {
-    
-    let get_raw_mempool_true = get_raw_mempool_true.lock().unwrap();
-    let mut range_weights_txs_mempool = range_weights_txs_mempool_clone.lock().unwrap();
-    
-    //Get max_weight
-    let mut max_weight: u64 = 0;
-    let mut min_weight: u64 = 100000000;
-    for (_wtxid, txinfo) in get_raw_mempool_true.entries.iter() {
-        let weight = txinfo.weight;
-        if weight > max_weight {
-            max_weight = weight;
-        }    
-        if weight < min_weight {
-            min_weight = weight;
+pub fn get_range_weights( get_range_weights_clone: Arc<Mutex<RangeWeights>>,  
+                          get_weight_tx_clone: Arc<Mutex<WeightTX>>  ) {
+
+    let get_weight_tx = 
+        get_weight_tx_clone.lock().unwrap();
+
+    let mut get_range_weights = 
+            get_range_weights_clone.lock().unwrap();
+
+
+    get_range_weights.erase_range_data();
+
+
+    // Iterar sobre get_weight_tx.weight_tx para obtener los rangos de pesos que se
+    // graban en get_range_weights.rang_data
+    let mut conta: u64 = 1;
+    // let mut last_weight: &u64 = &0;
+    let mut max_weight:u64 = 0;
+    for (weight, txsid) in &get_weight_tx.weight_tx {
+        if weight > &max_weight {
+            max_weight = weight.clone();
+        }
+        // Iteramos el Vector txsid para obtener los txid
+        for _txid in txsid {
+            conta += 1;
+        }
+
+        if conta > NUM_TXS_X_RANGE {
+            get_range_weights.add_range_data(weight.clone(), conta);
+            conta = 1;
+        }
+
+    }
+
+    // Calculamos el último rango de pesos
+    get_range_weights.add_range_data(max_weight, conta);
+
+}
+
+
+pub fn get_weight_tx( get_weight_tx_clone: Arc<Mutex<WeightTX>>,  
+                      get_raw_mempool_clone: Arc<Mutex<RawMempool>>  ) {
+
+    let get_raw_mempool = 
+        get_raw_mempool_clone.lock().unwrap();
+
+    let mut get_weight_tx = 
+            get_weight_tx_clone.lock().unwrap();
+
+    get_weight_tx.erase_weight_tx();
+
+    // let mut conta = 0;
+    for (txid, mempool_dat) in &get_raw_mempool.data {
+        // Añade a get_weight_tx.weight_tx el peso y el txid
+        get_weight_tx.weight_tx.entry(mempool_dat.weight).or_insert(Vec::new()).push(txid.to_string());
+
+        // conta += 1;
+    }
+    // println!("Weights - Txs procesadas: {}", conta);
+
+    // Ordena los pesos de menor a mayor
+    get_weight_tx.sort_by_weight();
+
+}
+
+
+pub fn delete_txs_last_block( txs_last_block: Vec<String>, 
+                              get_raw_mempool_clone: Arc<Mutex<RawMempool>> ){
+
+    let mut get_raw_mempool = 
+            get_raw_mempool_clone.lock().unwrap();
+
+    let mut conta = 0;
+    for txid in txs_last_block {
+        if get_raw_mempool.txid_exists(&txid) {
+            get_raw_mempool.data.remove(&txid);
+            conta += 1;
+        }
+        // get_raw_mempool.data.remove(&txid);
+    }
+    println!("Txs eliminadas: {}", conta);
+}
+
+
+pub fn get_txs_last_block(client: &Client) -> Result<Vec<String>, bitcoincore_rpc::Error> {
+
+    let last_block_hash: String = client.call("getbestblockhash", &[])?;
+
+    // Utilizar el hash para obtener los detalles del bloque, incluidas las transacciones
+    let block: Value = client.call("getblock", &[last_block_hash.into()])?;
+
+    // Intenta extraer las transacciones del bloque
+    let txs = if let Some(tx_array) = block["tx"].as_array() {
+        tx_array.iter()
+                 .map(|tx| tx.as_str().unwrap_or_default().to_string())
+                 .collect()
+    } else {
+        // Devuelve un error si no se encuentra el array de transacciones
+        return Err(RpcError::from(io::Error::new(io::ErrorKind::Other, "No tx array found in block")));
+    };
+
+    Ok(txs)
+  
+}
+
+
+
+pub fn get_last_block(client: &Client, 
+                      get_mempool_var_info_clone:Arc<Mutex<MempoolVarInfo>>) -> String {
+
+    let mut get_mempool_var_info = 
+            get_mempool_var_info_clone.lock().unwrap();
+
+    let last_block: String = client.call("getbestblockhash", &[]).unwrap();
+
+    get_mempool_var_info.last_block = last_block.clone();
+
+    last_block
+
+}
+
+pub fn add_txs_mempool_new_not_old( txs_mempool_new_not_old: Vec<String>, 
+                                    get_raw_mempool_clone: Arc<Mutex<RawMempool>> , 
+                                    client: &Client) {
+
+    let mut get_raw_mempool = 
+            get_raw_mempool_clone.lock().unwrap();
+
+    let mut conta = 0;
+    for txid in txs_mempool_new_not_old {
+        
+        // Get (size, weight, fee, fee_rate, time, height, ascen y descen) of txid from mempool
+        // Si no tiene ascen o descen saltar a la siguiente iteración
+        // En caso contrario obtener los valores vsize, weight, fee, fee_rate, time, height, num_ascen y num_descen
+        let my_mempool_dat = get_descendant_count(&client, &txid).unwrap();
+        if my_mempool_dat.num_descen > 1 {
+            get_raw_mempool.data.insert(txid, my_mempool_dat);
+            conta += 1;
         }
     }
+    println!("Txs nuevas: {}", conta);
+}
+
+pub fn get_descendant_count(client: &Client, txid: &str) -> Result<MempoolDat, bitcoincore_rpc::Error> {
+    let mut my_mempool_dat = MempoolDat::new(0, 0, 0, 0.0, 0, 0);
     
-    let range_widht = (max_weight - min_weight) / NUM_RANGOS;
-    // Generamos los rangos de pesos
-    for i in 1..NUM_RANGOS+1 {
-        let range_key = format!("{}", i * range_widht);
-        range_weights_txs_mempool.ranges.insert(range_key, 0);
-    }
-    
-    // Iteramos sobre get_raw_mempool_true.entries, get weight y obtenemos range_index y range_key
-    for (_wtxid, txinfo) in get_raw_mempool_true.entries.iter() {
-        let weight = txinfo.weight;
-        for (range_key, num_txs) in range_weights_txs_mempool.ranges.iter_mut() {
-            let range_key = range_key.parse::<u64>().unwrap();
-            if weight <= range_key {
-                *num_txs += 1;
-                break;
+    match client.call::<Value>("getmempoolentry", &[txid.into()]) {
+        Ok(entry) => {
+            // Intenta extraer el número de descendientes y devuelve el valor si es exitoso.
+            let descendant_count = entry.get("descendantcount").and_then(|n| n.as_u64()).unwrap_or(0);
+            if descendant_count > 1 {
+                let vsize = entry.get("vsize").and_then(|n| n.as_u64()).unwrap_or(0);
+                let weight = entry.get("weight").and_then(|n| n.as_u64()).unwrap_or(0);
+                let time = entry.get("time").and_then(|n| n.as_u64()).unwrap_or(0);
+                let fees_base = entry.get("fees").and_then(|fees| fees.get("base")).and_then(|n| n.as_f64()).unwrap_or(0.0);
+                let num_ascen = entry.get("ancestorcount").and_then(|n| n.as_u64()).unwrap_or(0);
+                let num_descen = entry.get("descendantcount").and_then(|n| n.as_u64()).unwrap_or(0);
+                
+                my_mempool_dat = MempoolDat::new(vsize, weight, time, fees_base, num_ascen, num_descen);
             }
-        }
-
-       
+            Ok(my_mempool_dat)
+        },
+        Err(_) => {
+            // En caso de cualquier error, devuelve 0.
+            Ok(my_mempool_dat)
+        },
     }
-
-
-} 
-
-
-pub fn get_mempool_entry_tx(get_mempool_entry_tx:  &Arc<Mutex<GetMempoolEntryTx>>, txid: &String, client: &Client)   {
-    
-    let mut get_mempool_entry_tx = get_mempool_entry_tx.lock().unwrap();
-    let mempool_entry: Value = client.call("getmempoolentry", &[Value::String(txid.to_string())]).unwrap();
-
-    if let Value::Object(entry_data) = mempool_entry {
-        let vsize = entry_data.get("vsize").and_then(Value::as_u64).unwrap();
-        let weight = entry_data.get("weight").and_then(Value::as_u64).unwrap();
-        let time = entry_data.get("time").and_then(Value::as_u64).unwrap();
-
-        let mempool_entry = MempoolEntry::new(vsize, weight, time);
-        get_mempool_entry_tx.add_entry(txid.to_string(), mempool_entry);
-    }
-
-    println!("get_mempool_entry_tx: {:?}", get_mempool_entry_tx.entries);
-
-}
-
-
-pub fn get_raw_mempool_true(get_raw_mempool_true:  &Arc<Mutex<GetRawMempoolTrue>>, client: &Client)   {
-    
-    let mut start = std::time::Instant::now();
-
-    let mut get_raw_mempool_true = get_raw_mempool_true.lock().unwrap();
-    let mempool_info: Value = client.call("getrawmempool", &[Value::Bool(true)]).unwrap();
-    
-    let duration = start.elapsed();
-    println!("Tiempo de getrawmempool: {:?}", duration);
-
-    start = std::time::Instant::now();
-
-    if let Value::Object(entries) = mempool_info {
-
-        // let mut conta = 0 ;
-        for (wtxid, entry) in entries {
-
-            // Si wtxid ya existe en get_raw_mempool_true.entries, no se añade
-            if get_raw_mempool_true.entries.contains_key(&wtxid) {
-                continue;
-            }
-             
-            if let Value::Object(entry_data) = entry {
-                let vsize = entry_data.get("vsize").and_then(Value::as_u64).unwrap();
-                let weight = entry_data.get("weight").and_then(Value::as_u64).unwrap();
-                let time = entry_data.get("time").and_then(Value::as_u64).unwrap();
-
-                let mempool_entry = MempoolEntry::new(vsize, weight, time);
-                get_raw_mempool_true.add_entry(wtxid, mempool_entry);
-                //conta += 1;
-
-
-            }
-        }
-
-        // println!("=> Txs añadidos a get_raw_mempool_true: {}", conta);
-        let duration = start.elapsed();
-        println!("Tiempo proceso getrawmempool: {:?}\n", duration);
-
-        let num_txs = get_raw_mempool_true.entries.len();
-        calcular_velocidad_transacciones(start, num_txs);
-
-    }
-
-}
-
-
-pub fn get_raw_mempool_false(get_raw_mempool_false:  &Arc<Mutex<GetRawMempoolFalse>>, client: &Client)   {
-    
-    let mut get_raw_mempool_false = get_raw_mempool_false.lock().unwrap();
-    let mempool_info: Value = client.call("getrawmempool", &[Value::Bool(false)]).unwrap();
-
-    if let Value::Array(entries) = mempool_info {
-
-        for entry in entries {
-
-            get_raw_mempool_false.add_entry( entry.as_str().unwrap().to_string());
-
-        }
-    }
-
-}
-
-
-pub fn get_last_block( mempool_var_info_clone: &Arc<Mutex<MempoolVarInfo>> , client: &Client)   {
-    
-    let mut mempool_var_info = mempool_var_info_clone.lock().unwrap();
-    let block_hash: Value = client.call("getbestblockhash", &[]).unwrap();
-
-    if let Value::String(last_block) = block_hash {
-        mempool_var_info.set_last_block(last_block);
-    }
-    
-    
-    //println!("block_hash: {}", block_hash);
-
 }
 
 
 
-// Funcion auxiliar
-// La función calculará la velocidad de procesamiento de las transacciones
-fn calcular_velocidad_transacciones(start: Instant, num_txs: usize) {
-    let duration = start.elapsed();
-    let seconds = duration.as_secs() % 60;
-    let miliseconds = duration.subsec_millis();
-    let velocity = num_txs as f64 / (seconds as f64 + miliseconds as f64 / 1000.0);
-    let velocity = format!("{:.1}", velocity);
+pub fn get_txs_mempool_new(client: &Client) -> Vec<String> {
 
-    println!("Procesadas {} Txs en {}s {}ms velocidad: {} Txs/s \n",num_txs, seconds, miliseconds, velocity);
+    let raw_mempool: Vec<String> = client.call("getrawmempool", &[serde_json::Value::Bool(false)]).unwrap();
+
+    // Toma los 2000 primeros elementos de raw_mempool
+    // let txs_mempool_new: Vec<String> = raw_mempool.iter().take(2000).cloned().collect();
+
+    let txs_mempool_new = raw_mempool;
+
+    txs_mempool_new
 }
+
 

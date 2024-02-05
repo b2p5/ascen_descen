@@ -2,47 +2,38 @@
 #[macro_use] extern crate rocket;
 use rocket::fs::FileServer;
 use rocket::fs::relative;
-use rocket_cors::{AllowedHeaders, AllowedOrigins, Cors, CorsOptions};
+// use rocket_cors::{AllowedHeaders, AllowedOrigins, Cors, CorsOptions};
 use std::sync::{Arc, Mutex};
 use std::thread;
+// use bitcoincore_rpc::Client;
 use std::time::Duration;
-use std::time::Instant;
+use std::collections::HashSet;
 
-extern crate serde_json;
-
-use crate::mempool_data::GetRawMempoolTrue;
-use crate::mempool_data::GetRawMempoolFalse;
-use crate::mempool_data::MempoolVarInfo;
-use crate::mempool_data::GetMempoolEntryTx;
-
-
-// Importaciones del módulo API
-mod apis;
+// Importación de módulos locales
 mod mempool_data;
 mod mempool_processor;
 mod conex;
+mod apis;
 
-const SLEEP_TIME: u64 = 5;
+// Definición de constantes
+const SLEEP_TIME: u64 = 15;
 
 // Función principal para lanzar el servidor Rocket
 #[launch]
 fn rocket() -> _ {
-  
+
     // Creando estructuras de datos para almacenar los datos de la mempool
-    let get_raw_mempool_true = Arc::new(Mutex::new(GetRawMempoolTrue::new()));
-    let get_raw_mempool_true_clone: Arc<Mutex<GetRawMempoolTrue>> = Arc::clone(&get_raw_mempool_true);
+    let get_raw_mempool = Arc::new(Mutex::new(mempool_data::RawMempool::new()));
+    let get_raw_mempool_clone: Arc<Mutex<mempool_data::RawMempool>> = Arc::clone(&get_raw_mempool);
 
-    let get_raw_mempool_false = Arc::new(Mutex::new(GetRawMempoolFalse::new()));
-    let get_raw_mempool_false_clone: Arc<Mutex<GetRawMempoolFalse>> = Arc::clone(&get_raw_mempool_false);
+    let get_mempool_var_info = Arc::new(Mutex::new(mempool_data::MempoolVarInfo::new(String::new())));
+    let get_mempool_var_info_clone: Arc<Mutex<mempool_data::MempoolVarInfo>> = Arc::clone(&get_mempool_var_info);
 
-    let get_mempool_entry_tx = Arc::new(Mutex::new(GetMempoolEntryTx::new()));
-    let mempool_entry_tx_clone: Arc<Mutex<GetMempoolEntryTx>> = Arc::clone(&get_mempool_entry_tx);
+    let get_weight_tx = Arc::new(Mutex::new(mempool_data::WeightTX::new()));
+    let get_weight_tx_clone: Arc<Mutex<mempool_data::WeightTX>> = Arc::clone(&get_weight_tx);
 
-    let range_weights_txs_mempool = Arc::new(Mutex::new(mempool_data::RangeWeightsTxsMempool::new()));
-    let range_weights_txs_mempool_clone: Arc<Mutex<mempool_data::RangeWeightsTxsMempool>> = Arc::clone(&range_weights_txs_mempool);
-
-    let mempool_var_info = Arc::new(Mutex::new(MempoolVarInfo::new("".to_string())));
-    let mempool_var_info_clone: Arc<Mutex<MempoolVarInfo>> = Arc::clone(&mempool_var_info);
+    let get_range_weights = Arc::new(Mutex::new(mempool_data::RangeWeights::new()));
+    let get_range_weights_clone: Arc<Mutex<mempool_data::RangeWeights>> = Arc::clone(&get_range_weights);
 
 
     // Creando un hilo para actualizar datos de la mempool periódicamente
@@ -50,69 +41,125 @@ fn rocket() -> _ {
         // Conexión con el nodo Bitcoin Core
         let client = conex::conex();
 
-        // Get el ultimo bloque minado
-        mempool_processor::get_last_block( &mempool_var_info_clone, &client);
+        // Variable para almacenar txs de la mempool 
+        // anterior(txs_mempool_old y txs_mempool_new)
+        let mut txs_mempool_old: Vec<String> = Vec::new();
+        // let mut txs_mempool_new: Vec<String> = Vec::new();
 
-        // Get raw_mempool false para obtener Txs de la mempool
-        mempool_processor::get_raw_mempool_false( &get_raw_mempool_false_clone, &client);
+        // Variable para almacenar el ultimo bloque de la blockchain 
+        // que se ha procesado (last_block_processed  old y new)
+        let mut last_block_processed_old = String::new();
+        // let mut last_block_processed_new = String::new();
 
-        // Get datos de una transacción de la mempool con getmempoolentry txid
-        let txid = "b172c27571f50ed888db58532b34ff2b66b083cd4134cbb1c7b625f7affef584".to_string();
-        mempool_processor::get_mempool_entry_tx( &mempool_entry_tx_clone, &txid, &client);
 
         loop {
+        
+            // Iniciamos tiempo que va a durar el procesamiento de las transacciones nuevas
+            let start = std::time::Instant::now();
 
-            // Get todas las Txs de la mempool con getrawmempool true
-            mempool_processor::get_raw_mempool_true( &get_raw_mempool_true_clone, &client);
+            
+            // TXS DE LA MEMPOOL
+            // Get txs de la mempool actual
+            let txs_mempool_new = mempool_processor::get_txs_mempool_new(&client);
 
-            // Itera raw_mempool.entries y actualiza range_weights_txs_mempool.ranges
-            mempool_processor::get_range_weights_txs_mempool(&get_raw_mempool_true_clone, Arc::clone(&range_weights_txs_mempool_clone));
+            println!("Txs totales: {:?}", txs_mempool_new.len());
+            
+            // Calculamos la diferencia entre txs_mempool_new y txs_mempool_old 
+            // y se almacena en txs_mempool_new_not_old
+            // Primero convertimos txs_mempool_old a HashSet para poder usar el método contains
+            let txs_mempool_old_set: HashSet<_> = txs_mempool_old.iter().cloned().collect();
+            // Calculamos la diferencia entre txs_mempool_new y txs_mempool_old
+            let txs_mempool_new_not_old: Vec<_> = txs_mempool_new
+                .iter()
+                .filter(|tx| !txs_mempool_old_set.contains(*tx))
+                .cloned()
+                .collect();
+
+            // println!("Txs nuevas: {:?}", txs_mempool_new_not_old);
+
+            // Añadimos txs_mempool_new_not_old a la struct RawMempool
+            mempool_processor::add_txs_mempool_new_not_old(txs_mempool_new_not_old, 
+                                                           get_raw_mempool_clone.clone(),
+                                                           &client);
+
+            // Actualizamos txs_mempool_old a txs_mempool_new
+            txs_mempool_old = txs_mempool_new;
+
+
+            // ULTIMO BLOQUE MINADO
+            // Get el ultimo bloque minado
+            let last_block_processed_new = mempool_processor::get_last_block( &client, get_mempool_var_info_clone.clone());
+            // Si el ultimo bloque minado es distinto al ultimo bloque minado anterior
+            // last_block_processed_new != last_block_processed_old
+            // entonces obtenemos las txs del ultimo bloque minado y estas txs
+            // las eliminamos de la struct RawMempool
+            if last_block_processed_new != last_block_processed_old {
+
+                println!("Nuevo bloque minado: {}", last_block_processed_new);
+                
+                // Get txs del ultimo bloque minado
+                let txs_last_block_result = 
+                            mempool_processor::get_txs_last_block(&client);
+
+                let txs_last_block: Vec<String> = match txs_last_block_result {
+                    Ok(txs) => txs,
+                    Err(e) => {
+                        println!("Error: {:?}", e);
+                        Vec::new() // Return an empty vector in case of error
+                    }
+                };
+                
+                // Eliminamos txs_last_block de la struct RawMempool
+                mempool_processor::delete_txs_last_block(txs_last_block, get_raw_mempool_clone.clone());
+                
+                // Actualizamos last_block_processed_old
+                last_block_processed_old = last_block_processed_new;
+                
+            }
+
+
+            // PESO DE LAS TXS
+            // Get el peso de las txs de la mempool (RawMempool)
+            // y los ordena de menor a mayor peso
+            mempool_processor::get_weight_tx( get_weight_tx_clone.clone(), 
+                                              get_raw_mempool_clone.clone());
+
+            // Calculamos los rangos de pesos 
+            mempool_processor::get_range_weights(get_range_weights.clone(), 
+                                                 get_weight_tx_clone.clone());
+
+
+
+
+            // Imprime el numero de transacciones que hay en la mempool
+            println!("Txs con ascen/descen: {}", get_raw_mempool_clone.lock().unwrap().data.len());
+
+            // Calculo del tiempo transcurrido
+            let duration = start.elapsed();
+            println!("Tiempo transcurrido: {:?}\n", duration);
+            
 
             // Esperar 5 segundos antes de volver a procesar las transacciones nuevas
             thread::sleep(Duration::from_secs(SLEEP_TIME));
-
         }
 
-    });
+    });   
 
     // Configurando el servidor Rocket con la ruta definida
     rocket::build()
-        .manage(get_raw_mempool_true)
-        .manage(get_raw_mempool_false)
-        .manage(get_mempool_entry_tx)
-        .manage(range_weights_txs_mempool)
-        .manage(mempool_var_info)
-        .attach(make_cors())
-        .mount("/", routes![apis::get_raw_mempool_true_json,
-                            apis::get_raw_mempool_false_json,
+        .mount("/", routes![apis::sketch_js, 
+                            apis::script_js,
                             apis::get_mempool_var_info_json,
-                            apis::get_range_weights_txs_mempool_json,
-                            apis::get_index, 
-                            apis::script_js, 
-                            apis::sketch_js, 
-                           ])
+                            apis::get_weight_tx_json,
+                            apis::get_range_weights_json,
+                            apis::get_raw_mempool_json,
+                            apis::get_txs_range_weights_json,
+                            apis::get_ascen_descen_for_txid_json,
+                            apis::get_index,])
+        .manage(get_raw_mempool)
+        .manage(get_mempool_var_info)
+        .manage(get_weight_tx)
+        .manage(get_range_weights_clone)
         .mount("/static", FileServer::from(relative!("static")))
-
+        // .attach(cors())
 }
-
-
-// Funciones auxiliares
-fn make_cors() -> Cors {
-    // let allowed_origins = 
-    //     AllowedOrigins::some_exact(&["http://127.0.0.1:8000/get_mempool_datos/2"]);
-
-    CorsOptions {
-        allowed_origins: AllowedOrigins::all(),
-        allowed_methods: vec![rocket::http::Method::Get].into_iter().map(From::from).collect(),
-        allowed_headers:  AllowedHeaders::some(&[
-            "Authorization",
-            "Accept",
-            "Content-Type",
-        ]),
-        allow_credentials: true,
-        ..Default::default()
-    }
-    .to_cors()
-    .expect("Error al configurar CORS")
-}
-

@@ -1,0 +1,3890 @@
+{
+    "f979c8aa4c6f9dba1dfdd99fde97ec90717d75ad039bcb7451a45a24943bf8af": {
+      "vsize": 141,
+      "weight": 562,
+      "time": 1706879815,
+      "fees_base": 0.00012055,
+      "num_ascen": 13,
+      "num_descen": 3
+    },
+    "f945563ea4f3958315bb3291cbf4f432a0269845be338266b84543a640b28be6": {
+      "vsize": 144,
+      "weight": 573,
+      "time": 1706877651,
+      "fees_base": 0.00004818,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "bcb033bde344f53e412853b37f7f9c67796ecccc1c81ff456f601fddac20ef75": {
+      "vsize": 129,
+      "weight": 513,
+      "time": 1706196347,
+      "fees_base": 0.0000201,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "b583dc76a8e2970df2b07610e2a8ec588595e1bec9fbd73de1fa9b31130f7064": {
+      "vsize": 153,
+      "weight": 610,
+      "time": 1706723921,
+      "fees_base": 0.00003366,
+      "num_ascen": 1,
+      "num_descen": 4
+    },
+    "287de4417baa206c9c80f236d5d88c88ead0f9972a651ffdcc36d46254c5689c": {
+      "vsize": 144,
+      "weight": 573,
+      "time": 1706876846,
+      "fees_base": 0.00005282,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "e0ad133a0a822fa8d4ee69b37f4b295c9d509df2a3497710ac1fc66df00531d2": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706100115,
+      "fees_base": 0.0000282,
+      "num_ascen": 5,
+      "num_descen": 10
+    },
+    "960354fee7450a5f42dd35fded9f5100ea9a1e949f40868af1528e688955e631": {
+      "vsize": 153,
+      "weight": 609,
+      "time": 1706875754,
+      "fees_base": 0.00006273,
+      "num_ascen": 1,
+      "num_descen": 3
+    },
+    "aadd4e48e166def727b091ebc6896e6e3f353f7c91314d1b19fd76614e38b510": {
+      "vsize": 143,
+      "weight": 569,
+      "time": 1706693041,
+      "fees_base": 0.00000286,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "30c9a2752019737b0ec1d0dd054eb1df5bd331a14f97483e81730c4cad07b898": {
+      "vsize": 144,
+      "weight": 573,
+      "time": 1706875698,
+      "fees_base": 0.00005731,
+      "num_ascen": 1,
+      "num_descen": 5
+    },
+    "339ba0c4f9e6201c957ad743e04a07b6e5b067f0a45eedd610b419eec5d0eb6e": {
+      "vsize": 142,
+      "weight": 566,
+      "time": 1706879870,
+      "fees_base": 0.00007825,
+      "num_ascen": 22,
+      "num_descen": 2
+    },
+    "5d521d7af12a10e839320b8eb9b49fad54a08058400c9c495beaf261fbf8a379": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706100115,
+      "fees_base": 0.0000282,
+      "num_ascen": 4,
+      "num_descen": 11
+    },
+    "9a0595b38439305084442d867a91d3e749aee709544e683c853c4b79d231888a": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706875990,
+      "fees_base": 0.00004399,
+      "num_ascen": 5,
+      "num_descen": 7
+    },
+    "da843184866c142096485a59990a3c60f07616f7f936b6a42933620926db24b1": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706877068,
+      "fees_base": 0.00005611,
+      "num_ascen": 4,
+      "num_descen": 3
+    },
+    "b63ed8d6ee3529f4270b2bfbd971054dbbfb1f3113d01437f47381a98d1fe07c": {
+      "vsize": 111,
+      "weight": 442,
+      "time": 1706814497,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "ebc226577f79be62ef565d8a78f66b1f51bce1482e93a10135da18333378bc05": {
+      "vsize": 153,
+      "weight": 609,
+      "time": 1706875057,
+      "fees_base": 0.00003672,
+      "num_ascen": 2,
+      "num_descen": 3
+    },
+    "df9bef4d966839b12372f1d57a029df047009495ac0e3bf3c8c1de0b69855b44": {
+      "vsize": 153,
+      "weight": 609,
+      "time": 1706879633,
+      "fees_base": 0.00006975,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "25289bf05be149647358e79be3d38353db91c50ca4cb2801bf3c67b4a12e5bce": {
+      "vsize": 113,
+      "weight": 450,
+      "time": 1706814013,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "08f5cff7a96b67118cf3f90884ace1c3b6c2f6c313f2eccfb4c1272ed158aea0": {
+      "vsize": 111,
+      "weight": 441,
+      "time": 1706869969,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "ee6993063a9b1293d914454c19671593dd87e67ce2e989a75e8d4de27339fa61": {
+      "vsize": 143,
+      "weight": 569,
+      "time": 1706693022,
+      "fees_base": 0.00000429,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "c529cb8353f0aa209a9c4411489fb69258de65b662bc3436ddd0c6b91aed45e1": {
+      "vsize": 143,
+      "weight": 569,
+      "time": 1706693021,
+      "fees_base": 0.00000429,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "e39351020dd247cc6e0482f5c95fa27e3a52772a98b8a8867ced7a86b66be31a": {
+      "vsize": 144,
+      "weight": 573,
+      "time": 1706875562,
+      "fees_base": 0.00005282,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "95760f89c2c62850847a1dd90b828151358a834fdcf339a843ed96ecbb51bf16": {
+      "vsize": 113,
+      "weight": 449,
+      "time": 1706814031,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "c6af47e2fafe406f40d0fa4b7cc7e6f3b4d35130c45fd06339d122e1b7228e5a": {
+      "vsize": 113,
+      "weight": 449,
+      "time": 1706814002,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "82f44f4779b3a6e9ddbe899d217770d5e6ac1e1fe25ef38658f3266d55e817f9": {
+      "vsize": 153,
+      "weight": 609,
+      "time": 1706875273,
+      "fees_base": 0.00004284,
+      "num_ascen": 1,
+      "num_descen": 21
+    },
+    "a32ffe39440c25db869f0aa9062e1c2f393b1f10d5c4a552e0c507ce12f49c11": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706875945,
+      "fees_base": 0.00005022,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "ab205169c252b44dffb2376f0b0e24037f04b5a7a595b590172e2d4631f1fab8": {
+      "vsize": 111,
+      "weight": 444,
+      "time": 1706813976,
+      "fees_base": 0.00000384,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "61735595620100608b69949a6ab166f7f973c713be7ea5f93961f734aade82c4": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706876669,
+      "fees_base": 0.00005922,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "39ff1f6c6f7229b11eb0ebe4c41ac29052ead2329675853a49f444c3f58f5b71": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1705912816,
+      "fees_base": 0.0000282,
+      "num_ascen": 2,
+      "num_descen": 4
+    },
+    "7bce6d2f206b53fe7f8b0916a0fefabc9afaa609e275feb4b4100519d3540fd8": {
+      "vsize": 113,
+      "weight": 450,
+      "time": 1706813995,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "3149b5cbd93b5e8797d07cb3dfbff38111f942369b47a0962e9ec41043ea6fbe": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706876773,
+      "fees_base": 0.00005611,
+      "num_ascen": 2,
+      "num_descen": 4
+    },
+    "48f4f7597a8183f193ba98789816259631494f6e59b06287c8fc3bd3ef8f7b0b": {
+      "vsize": 110,
+      "weight": 437,
+      "time": 1706785089,
+      "fees_base": 0.000025,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "784457bf1e66e1b236cd960c9a63edc6ec33635b3b4ff91dacb8c5ca4078ff47": {
+      "vsize": 141,
+      "weight": 562,
+      "time": 1705924489,
+      "fees_base": 0.0000284,
+      "num_ascen": 9,
+      "num_descen": 15
+    },
+    "066046458515086cb46147209a2ca1229c5c3afa24aca0e0ee0aef706ad7f3dd": {
+      "vsize": 142,
+      "weight": 565,
+      "time": 1706875534,
+      "fees_base": 0.0000549,
+      "num_ascen": 1,
+      "num_descen": 3
+    },
+    "bfd8d19ec3d7f4f54561ec41f5d4a1a85fc46587f72101547db5a376c9417f1f": {
+      "vsize": 113,
+      "weight": 450,
+      "time": 1706814005,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "8cb4a7d71f2362d33a1b0e5dc36f38dba97e4653deced61700f439ce4a6e8158": {
+      "vsize": 143,
+      "weight": 569,
+      "time": 1706693015,
+      "fees_base": 0.0000143,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "b706d3d656c59a94ce0d37515a1d485d742df620fc3f6443cf48a2ebcaafb0c5": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706875357,
+      "fees_base": 0.0000406,
+      "num_ascen": 1,
+      "num_descen": 8
+    },
+    "49de47f8c4155e3f79408f3ff6d25cd13890d6dcac9a1c77f792d5db023fec71": {
+      "vsize": 143,
+      "weight": 569,
+      "time": 1706693015,
+      "fees_base": 0.00000858,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "35c60d9a66412dc1cba23d8fc4aa5c4cfcc9fc53827bd993e79301b183102a17": {
+      "vsize": 113,
+      "weight": 449,
+      "time": 1706814005,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "2d9ca327949a93acaf5f0a3ee06362934441060cc8ed332d96bb77c15f66f53c": {
+      "vsize": 153,
+      "weight": 609,
+      "time": 1706879527,
+      "fees_base": 0.00007423,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "549f30fe0668ff229312913586a5b7256bf3120dab319ff1a17b60200d8c60f6": {
+      "vsize": 113,
+      "weight": 450,
+      "time": 1706814013,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "f417bb36276801260768bba957dd193afdf7afb71e13fea646aaf3bbae513045": {
+      "vsize": 110,
+      "weight": 438,
+      "time": 1706863650,
+      "fees_base": 0.00002464,
+      "num_ascen": 5,
+      "num_descen": 6
+    },
+    "ca60c26307980ac5b026bc6a207d365b34afc6379e206fe898afb7240ad38f73": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706874917,
+      "fees_base": 0.00003988,
+      "num_ascen": 1,
+      "num_descen": 3
+    },
+    "0cd2e5d3041d82cef7469d230f0e5b54545157d938f72684e5dedc2dbbc0707d": {
+      "vsize": 141,
+      "weight": 562,
+      "time": 1706876842,
+      "fees_base": 0.00005254,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "314212765adcd8ea6745a031ecfb54a1e7d76c8875c6dbcf598bf7e4cc9a20cc": {
+      "vsize": 144,
+      "weight": 574,
+      "time": 1706877943,
+      "fees_base": 0.0000414,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "9a68f1f035b5aaa2529ec0b36e7106950790791e2b7adc438cab982366dd87e2": {
+      "vsize": 113,
+      "weight": 450,
+      "time": 1706814013,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "3e9b185d779bb69bdaafde082389187a10acf87981e9e6c38c3323efb00a389c": {
+      "vsize": 142,
+      "weight": 568,
+      "time": 1706874897,
+      "fees_base": 0.00003718,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "fa2555378b843fc53dc621ccccc1f96efcd982c5289f0a70e7959f2517fa07a2": {
+      "vsize": 147,
+      "weight": 587,
+      "time": 1706869210,
+      "fees_base": 0.00005016,
+      "num_ascen": 2,
+      "num_descen": 2
+    },
+    "ab4642c77a099d6ebc8fbc80d2cd47ab4566793d58e4039c0ced5c3552c2be40": {
+      "vsize": 111,
+      "weight": 444,
+      "time": 1706813976,
+      "fees_base": 0.00000384,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "ea6bcddccb976e1f68d975472e3af40e6253c616ed87ae336611f34d1e65e802": {
+      "vsize": 113,
+      "weight": 449,
+      "time": 1706814015,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "361f6501139378b232ee60193d28a6217fc7bb08f07affcff1da36c068ca3244": {
+      "vsize": 153,
+      "weight": 609,
+      "time": 1706879565,
+      "fees_base": 0.00007191,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "bb205a9d982d5d6a6696beea32527fe55024ee7994fea1e692f362d94c379906": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706876205,
+      "fees_base": 0.00004053,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "ac6c234a819b1dcdbfcb83e21b27696ff769b312afebfbaf450013e1dd48cad0": {
+      "vsize": 144,
+      "weight": 573,
+      "time": 1706877870,
+      "fees_base": 0.00005472,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "c6604c91cb1e47d84d6272cae03507fded88bd32fd9e62dbb8b2cd3b77ba2cf4": {
+      "vsize": 142,
+      "weight": 565,
+      "time": 1706875477,
+      "fees_base": 0.00005094,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "934befe3a18d0a0645f05ad571e5a4b6041728c230496a83e33fcd1f06218369": {
+      "vsize": 113,
+      "weight": 450,
+      "time": 1706814002,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "793a80a9aaf015270334e7f2ac353c41516f46292762dbc06ceab6c9315a5e8d": {
+      "vsize": 144,
+      "weight": 573,
+      "time": 1706876094,
+      "fees_base": 0.00004073,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "64cf6732d0bc5a66a89e4cc1b1362ae0b37f89f33ea0f83901b46fa501ff6434": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706875568,
+      "fees_base": 0.00002765,
+      "num_ascen": 1,
+      "num_descen": 4
+    },
+    "acba2d6d98414662064631884392d9d28d3c3c11951ab04ebc5fade52decad45": {
+      "vsize": 113,
+      "weight": 450,
+      "time": 1706814002,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "284059a5572c9787769669142af56e7b9269b7bc48ce67076dd516afa3801937": {
+      "vsize": 144,
+      "weight": 573,
+      "time": 1706814013,
+      "fees_base": 0.0000154,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "394ac6b5439b7fc5c1c17e293aef505b5a31cc74ad09cc1e66e4e026fac15930": {
+      "vsize": 113,
+      "weight": 449,
+      "time": 1706814005,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "82eb56e129589bb87e3887eec0a14a5b766ddaf64ad7bff1abbb87212b5ce041": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1705924489,
+      "fees_base": 0.0000284,
+      "num_ascen": 20,
+      "num_descen": 4
+    },
+    "3493aa5234c705da60aa1c9de5ee58ee163241118830c726f21d1ad5d226c574": {
+      "vsize": 153,
+      "weight": 610,
+      "time": 1706875042,
+      "fees_base": 0.00003672,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "7e030a86d27b0ce8792f0a43786ac9e1c0e343818cd81f077a4a525c032d84c7": {
+      "vsize": 131,
+      "weight": 524,
+      "time": 1706877256,
+      "fees_base": 0.00003737,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "472db00de89b5d70bf5bc7e3251bc82e66c40d2f18dadec92daade103f21c733": {
+      "vsize": 113,
+      "weight": 449,
+      "time": 1706814005,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "3ff1a48039d0cd666630d474731bea159e33600d83dbb188e226d2b9fdb51825": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706813237,
+      "fees_base": 0.00001118,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "484f6c7b871a8143499c270c727599b071826d65392defb2481106a3cb5f4498": {
+      "vsize": 122,
+      "weight": 485,
+      "time": 1705909228,
+      "fees_base": 0.00002697,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "238c90a79d63c3faa76b6786b6f7f6337e9fbeb91525d8f9c07e4cbef6f77723": {
+      "vsize": 144,
+      "weight": 574,
+      "time": 1706871137,
+      "fees_base": 0.00003582,
+      "num_ascen": 3,
+      "num_descen": 2
+    },
+    "43cf0ff56a14e1b821eb2dda7483ba4e061e3ce40612bbbc1d0e5d550231353d": {
+      "vsize": 153,
+      "weight": 610,
+      "time": 1706874981,
+      "fees_base": 0.00004752,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "bedeb46e2c364c1f29a733b0a16d9e413f631580f46258be83b8f309441bbcea": {
+      "vsize": 113,
+      "weight": 450,
+      "time": 1706813995,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "1ebc5cd37c790776f183f02980dbc7e486ed7aacb613a97d72c83126d99c4b0e": {
+      "vsize": 143,
+      "weight": 569,
+      "time": 1706693015,
+      "fees_base": 0.00000572,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "2a16d1161bcc172e0d762e7ebb3aee950d1344daed129e5668655af31f585a3e": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706875893,
+      "fees_base": 0.00005316,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "b172c27571f50ed888db58532b34ff2b66b083cd4134cbb1c7b625f7affef584": {
+      "vsize": 141,
+      "weight": 562,
+      "time": 1705924489,
+      "fees_base": 0.0000284,
+      "num_ascen": 22,
+      "num_descen": 2
+    },
+    "74629ddbd5a25c801739894e1b92836af4d6b8d5f675311ee54e566857a26696": {
+      "vsize": 121,
+      "weight": 484,
+      "time": 1705909200,
+      "fees_base": 0.00002778,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "750eb16ba691b03c097a9ada170da338a5459ef02377c0738873761ef602d21c": {
+      "vsize": 153,
+      "weight": 610,
+      "time": 1706874973,
+      "fees_base": 0.00003672,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "d1a58a94ae209d017b6fe873f56dccbb3b8ab4e4db18fffd1d60f0c1718ff44f": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706879412,
+      "fees_base": 0.00011086,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "d8a8921d3b5b427e4ea4a03b7cd4042a87c023d4732034695aab01aaa7bd6c31": {
+      "vsize": 144,
+      "weight": 573,
+      "time": 1706814036,
+      "fees_base": 0.00006721,
+      "num_ascen": 2,
+      "num_descen": 2
+    },
+    "215deb67175dcddf2dfe8a4084b129b3a739459e593a95d0add94f6d86c35924": {
+      "vsize": 142,
+      "weight": 566,
+      "time": 1706875588,
+      "fees_base": 0.00004818,
+      "num_ascen": 1,
+      "num_descen": 4
+    },
+    "cbd174160a8a322d634e847cfdadfc219bef5cc58ab438c882ecb8cbe7c4563f": {
+      "vsize": 153,
+      "weight": 609,
+      "time": 1706876074,
+      "fees_base": 0.00003978,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "c9a7a106255fcb8db1ee04151271772965e6d0237555356359473893c402bff1": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706433621,
+      "fees_base": 0.00003102,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "c97d18aaeffd2bf7e821a2f3257ac95672438362aa97fa82f7eb46188a02c0a7": {
+      "vsize": 142,
+      "weight": 566,
+      "time": 1705911372,
+      "fees_base": 0.0000286,
+      "num_ascen": 2,
+      "num_descen": 22
+    },
+    "0d103aa2b11d4e4b97560a3517a9b14e6f576403f8f705b66829317c0f8cb0e1": {
+      "vsize": 142,
+      "weight": 568,
+      "time": 1706874721,
+      "fees_base": 0.00003588,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "f1475806f80a1927f7f24df822dcbeba90ac535a57dc12e384ad0bd30d18b115": {
+      "vsize": 144,
+      "weight": 573,
+      "time": 1706873993,
+      "fees_base": 0.00002295,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "bcfd004961c54b0968f0b54773a0237931d17a5b91d39d1a1704a0a43b7c60a6": {
+      "vsize": 113,
+      "weight": 450,
+      "time": 1706814002,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "c0d383a134ec8a57495b259bb5c6bb8b205caf65da9bcf454fd72a0ae56bfa33": {
+      "vsize": 113,
+      "weight": 450,
+      "time": 1706813250,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "5406dab8d5de221501cb03e05b694958bbc9ac409a007b375359c00beb98c2fd": {
+      "vsize": 153,
+      "weight": 610,
+      "time": 1706862114,
+      "fees_base": 0.00003519,
+      "num_ascen": 1,
+      "num_descen": 25
+    },
+    "b2e709886d3c41235f987716965b2b5e35b43aad29d6cfc6cc843cdf698b3550": {
+      "vsize": 141,
+      "weight": 562,
+      "time": 1706875651,
+      "fees_base": 0.00005171,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "0561300d35b3d5877f8afadc27af666b2d96092cae07b22d6820413037545abe": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706875754,
+      "fees_base": 0.00004399,
+      "num_ascen": 2,
+      "num_descen": 10
+    },
+    "f8c47dd16e93c949b8b24a42a5dd8d93a4a25ad1baa0791cf55487bc65473e84": {
+      "vsize": 142,
+      "weight": 568,
+      "time": 1706874752,
+      "fees_base": 0.00004402,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "87ddef9e16362dce2ecd980dd9b1c251b5a5f137f53f80664645ae1769e4c09b": {
+      "vsize": 141,
+      "weight": 562,
+      "time": 1706875681,
+      "fees_base": 0.00004557,
+      "num_ascen": 2,
+      "num_descen": 2
+    },
+    "0c7bd8b10f5ada7bbae6ac73c0c0d720a7c0c112d591d4f293452bf795745aa6": {
+      "vsize": 113,
+      "weight": 449,
+      "time": 1706814002,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "35ff9a203c4aed342e58f7c5bfd7044cdaebe57e9fa11ad684a6a72ab5069ed2": {
+      "vsize": 113,
+      "weight": 450,
+      "time": 1706813995,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "96dd5fe85e642d3fce63193ac26282d1359f7c94fca738859816674f6985ca1c": {
+      "vsize": 153,
+      "weight": 610,
+      "time": 1706875448,
+      "fees_base": 0.0000496,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "330496961ba96d99a5552cf557b437e5994bdbba47e9b37b46d0fbeb82fda271": {
+      "vsize": 153,
+      "weight": 609,
+      "time": 1706874880,
+      "fees_base": 0.00004279,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "ad961c10d89f60ca9452c45120ee6659c2cfed55242cb3a48edf71b47b8396c2": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706878862,
+      "fees_base": 0.00000438,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "d43caf8606cb17d65c1aed3fe57b3b34e262830b846cf6eefe8fbe7557d3fa72": {
+      "vsize": 142,
+      "weight": 566,
+      "time": 1705924489,
+      "fees_base": 0.0000286,
+      "num_ascen": 12,
+      "num_descen": 12
+    },
+    "788e0391ba753c8371d86ef6f4fa79793ffe61c516057755ce720630c7f054cb": {
+      "vsize": 113,
+      "weight": 449,
+      "time": 1706814002,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "76a422e321300c3cc43ed24430d5482583f1e8c9f24c8b15d3a8d2aa8026a5aa": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706874842,
+      "fees_base": 0.00004399,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "403846d66899852ae54ddd5a6a623a4eea131a5fd8cc0c12e6e02b52db6aec6a": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706877076,
+      "fees_base": 0.00005611,
+      "num_ascen": 5,
+      "num_descen": 2
+    },
+    "96abe38e18db149738672cc9a14a0550023e0ed12ff53f48d6740e6c6e9d2c62": {
+      "vsize": 110,
+      "weight": 437,
+      "time": 1706869969,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "07d0dd7c0c234070215b378a1a8cd3481801e11f33ae93596dbbe91cf444fc5e": {
+      "vsize": 113,
+      "weight": 449,
+      "time": 1706814002,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "4e7c7aef03f7720a2d3321977912e99355ed2cb6ef16c71c23c0c2c6088987ac": {
+      "vsize": 110,
+      "weight": 437,
+      "time": 1706109259,
+      "fees_base": 0.00000654,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "7c2aee521e81c906fd1e8c88fce112462932386b2daf53c9f096b2838520a714": {
+      "vsize": 133,
+      "weight": 529,
+      "time": 1706879056,
+      "fees_base": 0.00005911,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "203304a2ea7b1a75484a980515b9857d1140243023a3ae9e67b282fc2970f623": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706875062,
+      "fees_base": 0.00003988,
+      "num_ascen": 1,
+      "num_descen": 3
+    },
+    "3fddabe49e20724d49efc7425f033575d9a04edb59a5587fe234a2e18b95654e": {
+      "vsize": 143,
+      "weight": 569,
+      "time": 1706693032,
+      "fees_base": 0.00000286,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "ca32a8e714982e06e60efdc208da42b988a5ccb44ba9ff0698f90d9382f7c442": {
+      "vsize": 141,
+      "weight": 562,
+      "time": 1706877719,
+      "fees_base": 0.0000434,
+      "num_ascen": 4,
+      "num_descen": 2
+    },
+    "3304f003e7e1aabf2e6361f62c4129f08bf3a2763be150c8c2561eec4387fcb3": {
+      "vsize": 113,
+      "weight": 450,
+      "time": 1706814013,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "f628767e67a8e7617857a2a90f575c44f03d4ff752264aa2b3ec8605b75d320b": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706877483,
+      "fees_base": 0.00004718,
+      "num_ascen": 1,
+      "num_descen": 3
+    },
+    "b33c659762587c84735483f147f3d9681fcd514152f7d85b39998cd8662f68e0": {
+      "vsize": 153,
+      "weight": 609,
+      "time": 1706879862,
+      "fees_base": 0.0000919,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "0e04f17b49fa7e7de255f4b84ec9b9f60b031f93fe605b6bfce976f756e9f2a7": {
+      "vsize": 111,
+      "weight": 442,
+      "time": 1706869969,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "a9034145feb1264544cbb416e50349da512325f94675a01451635993bba313c2": {
+      "vsize": 142,
+      "weight": 565,
+      "time": 1706098612,
+      "fees_base": 0.0000284,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "9fe771281b02757625ba52b26074a92a90feb7c6d0eaa90bc5ea12644580ddf2": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706874893,
+      "fees_base": 0.000039,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "6c4865313b7d552705736cfa60a7deb2c45bc4bdec1107cfa2e1648ae3a301b6": {
+      "vsize": 142,
+      "weight": 566,
+      "time": 1705924489,
+      "fees_base": 0.0000286,
+      "num_ascen": 17,
+      "num_descen": 7
+    },
+    "491e1ffa5e4ca04307dc7b9d69e3cbde103e7daf0427ebf9b79c561b3fafb7c8": {
+      "vsize": 153,
+      "weight": 610,
+      "time": 1706875709,
+      "fees_base": 0.00005967,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "f8ffd8289634fd4ab19d4f96ba082288c6010823547e811ef931d223116593aa": {
+      "vsize": 110,
+      "weight": 438,
+      "time": 1706861894,
+      "fees_base": 0.00001792,
+      "num_ascen": 8,
+      "num_descen": 6
+    },
+    "a6d58e394494b2b8ef5751285b259c274a24b5aa564364aee684199d7afd9615": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706874915,
+      "fees_base": 0.00003313,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "0000d22f2491040b366b323296e339c65be95bfdd28158a443ad5f7d02c0a470": {
+      "vsize": 111,
+      "weight": 444,
+      "time": 1706618248,
+      "fees_base": 0.0000222,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "b833014aad68dd18dfa3d14422babeb28942022d06593479bb49579655da6370": {
+      "vsize": 153,
+      "weight": 609,
+      "time": 1706879773,
+      "fees_base": 0.00011844,
+      "num_ascen": 6,
+      "num_descen": 2
+    },
+    "c3e7560c7bfc4bd3734bf129d9c70254efc3ed457f1225ca4291787d10650681": {
+      "vsize": 142,
+      "weight": 566,
+      "time": 1705911381,
+      "fees_base": 0.0000286,
+      "num_ascen": 4,
+      "num_descen": 20
+    },
+    "8750606356ea21234784b67718d644d4ea50962b37497add5e939247fda053f2": {
+      "vsize": 130,
+      "weight": 520,
+      "time": 1706874848,
+      "fees_base": 0.00003677,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "14563dd39f4a638f41f395fce183d4c466d414cd8576ebb9d0d5e615fa5132de": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706875103,
+      "fees_base": 0.00004193,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "00379f829f23dcfc6b570f299deb731da79f0104bd5e35cd4d94617546837abb": {
+      "vsize": 110,
+      "weight": 438,
+      "time": 1706869969,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "f0bfb5bc0d65cf9847a26b7bcf43f103173d785739c8e8123c43e015654c3c45": {
+      "vsize": 113,
+      "weight": 450,
+      "time": 1706814002,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "520ab264041d83361f1706557a781c519ebd9cbbbd1b30de49f22037717c8e6f": {
+      "vsize": 141,
+      "weight": 562,
+      "time": 1706879838,
+      "fees_base": 0.00007825,
+      "num_ascen": 17,
+      "num_descen": 2
+    },
+    "74e6946a04783951b252741212668124cdf39ba0266e9511f0d4e5c85a5b4c14": {
+      "vsize": 110,
+      "weight": 438,
+      "time": 1706861894,
+      "fees_base": 0.00002464,
+      "num_ascen": 2,
+      "num_descen": 12
+    },
+    "146def5f68f773a04fd3fb7f47e7ba184cfd112f85d6811afe60102b6558b4a3": {
+      "vsize": 153,
+      "weight": 610,
+      "time": 1706876074,
+      "fees_base": 0.0000459,
+      "num_ascen": 2,
+      "num_descen": 2
+    },
+    "35a4b387d28c6b764a161589ee92f0785bac50ed9eaf2e9e1010f781d1771da1": {
+      "vsize": 141,
+      "weight": 562,
+      "time": 1706875792,
+      "fees_base": 0.00004024,
+      "num_ascen": 2,
+      "num_descen": 2
+    },
+    "34f108ca4f2116dd94a581187850ee67e110e361d2c07351b49c879ba8305f9a": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706875691,
+      "fees_base": 0.00005611,
+      "num_ascen": 1,
+      "num_descen": 5
+    },
+    "c80f93f2bda70d0a9842b5d20bd752764665aa8bdbe276fb249acc616c994890": {
+      "vsize": 110,
+      "weight": 437,
+      "time": 1706876531,
+      "fees_base": 0.0000385,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "3f52925d58aa2e3763bb2201c50abd9b0609d9d9a93455df6ff74b92067abc06": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706876643,
+      "fees_base": 0.00004333,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "384d2f69989be53968c90fa3ab409791ba041aa9fadf6a12b876392caa059346": {
+      "vsize": 110,
+      "weight": 437,
+      "time": 1706861894,
+      "fees_base": 0.00002464,
+      "num_ascen": 1,
+      "num_descen": 13
+    },
+    "2cad8f54c981d5b89001c8b7b3216e9125a9d49df2abb8ad45b987ad0fb8b177": {
+      "vsize": 143,
+      "weight": 569,
+      "time": 1706693032,
+      "fees_base": 0.00000286,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "00c22c4b88caf60c7e3aceb9b0a0a4ec20fcf4dc42104c471a77eb913a28cfcb": {
+      "vsize": 142,
+      "weight": 565,
+      "time": 1705924489,
+      "fees_base": 0.0000286,
+      "num_ascen": 18,
+      "num_descen": 6
+    },
+    "769831539a5d997b6c6e97d11fd14257a862493f12f81f9e01dd2a8e85bf1abb": {
+      "vsize": 144,
+      "weight": 573,
+      "time": 1706877308,
+      "fees_base": 0.00005731,
+      "num_ascen": 4,
+      "num_descen": 2
+    },
+    "52b96ec1d084077981da633e3fcb338f3dd3bd7b117b14e4a833310eaf134c7b": {
+      "vsize": 142,
+      "weight": 566,
+      "time": 1706876494,
+      "fees_base": 0.00005208,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "add49a535d05b4ec2ed6433ee41b036fa4e6aefd3c56a0a9cca0223929cfed9b": {
+      "vsize": 113,
+      "weight": 450,
+      "time": 1706814002,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "993588d0b3a32b3d87a56d196b6f6fdb1a76c76e455ee9d3a74c3394fe9d4355": {
+      "vsize": 142,
+      "weight": 566,
+      "time": 1705924489,
+      "fees_base": 0.0000286,
+      "num_ascen": 19,
+      "num_descen": 5
+    },
+    "df5e5b86c676d7da3e8970a1494d5a276fc414f1268c4e038874d41390c4b38b": {
+      "vsize": 142,
+      "weight": 565,
+      "time": 1706876712,
+      "fees_base": 0.00005651,
+      "num_ascen": 3,
+      "num_descen": 3
+    },
+    "b3be76d1a3a8b9ad5d9c862d5fdf2243a145f48598d471f18108c0050de764d4": {
+      "vsize": 141,
+      "weight": 562,
+      "time": 1706871973,
+      "fees_base": 0.00002805,
+      "num_ascen": 2,
+      "num_descen": 2
+    },
+    "d52ae16e305292203041db0e409519c662cfeb602dd96f6b66254dd5617256fa": {
+      "vsize": 153,
+      "weight": 609,
+      "time": 1706879820,
+      "fees_base": 0.00012478,
+      "num_ascen": 14,
+      "num_descen": 2
+    },
+    "c6cf7d4f1779f6ca4c014bf2794ed11f0e38ff918b337a10df9f5950e7e02780": {
+      "vsize": 111,
+      "weight": 441,
+      "time": 1706869969,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "46df50617da7465a5494439e39634ab5eddd818607bd8ad1d7248acfcf5a90e6": {
+      "vsize": 142,
+      "weight": 565,
+      "time": 1706876283,
+      "fees_base": 0.00005208,
+      "num_ascen": 1,
+      "num_descen": 3
+    },
+    "08a93ffdd0dc8d6eb3100c5af04c89d32c65520b6d3a8ee667061bea97886c18": {
+      "vsize": 111,
+      "weight": 441,
+      "time": 1706869969,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "97be54002108a4bf053f8e0068acec21a0624aa9a51da30c4d193ad4e7ba6138": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706876349,
+      "fees_base": 0.00004399,
+      "num_ascen": 9,
+      "num_descen": 3
+    },
+    "878b7d2d65377982a995fa440b51465341769d723f49a1c27c660b5b5a0f5ee1": {
+      "vsize": 153,
+      "weight": 609,
+      "time": 1706875658,
+      "fees_base": 0.00006355,
+      "num_ascen": 2,
+      "num_descen": 2
+    },
+    "443e717e8bc7bbef9d027d962461cedd084259552cd844450cf5a91e161b1b1c": {
+      "vsize": 144,
+      "weight": 574,
+      "time": 1706445522,
+      "fees_base": 0.00001433,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "69514a7fe02920cab4bd2315b0a9f56775311ab1090140cd0d083046ea8cffd9": {
+      "vsize": 143,
+      "weight": 572,
+      "time": 1706874781,
+      "fees_base": 0.00003718,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "05efd1551362dbb81456747a1cc6ce2b49328eab8db0ba06b9c45868aedda7b9": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1705911387,
+      "fees_base": 0.0000284,
+      "num_ascen": 7,
+      "num_descen": 17
+    },
+    "d1f55aef66fa97c70be2679f33ed735eda64db3883e79c2c99be508cdf7d35d4": {
+      "vsize": 141,
+      "weight": 562,
+      "time": 1706877679,
+      "fees_base": 0.0000434,
+      "num_ascen": 3,
+      "num_descen": 3
+    },
+    "eb02484e3efcfd6bdd4a7f07582895aa484a2e4c6581f650188c46c6a84e96d8": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706879744,
+      "fees_base": 0.00011421,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "5d095eb3ad0f44af66a21429f710c77a1b19837e68a1111b6d94f79f583224b2": {
+      "vsize": 122,
+      "weight": 485,
+      "time": 1706866048,
+      "fees_base": 0.00002442,
+      "num_ascen": 1,
+      "num_descen": 3
+    },
+    "da2b7173b52a62389c6780541014e05017466becd18313ead15898f4707055a6": {
+      "vsize": 149,
+      "weight": 595,
+      "time": 1706863371,
+      "fees_base": 0.00001452,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "f438cfffc9ff5568e535083efd5aa164018055cfd8de810c349804d1c1a338c4": {
+      "vsize": 141,
+      "weight": 562,
+      "time": 1705924489,
+      "fees_base": 0.0000284,
+      "num_ascen": 13,
+      "num_descen": 11
+    },
+    "3c9add0a2954ae7603b565371e250a6d9b5dcb1ede5244fb670a43d2271144d8": {
+      "vsize": 141,
+      "weight": 562,
+      "time": 1706874638,
+      "fees_base": 0.00004061,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "52f3354500f5fd355776d88e8e543dfb7f82008e805b68fa27ed19fc6ce883b3": {
+      "vsize": 142,
+      "weight": 565,
+      "time": 1706876734,
+      "fees_base": 0.00004426,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "c8a9970a3df85f063bfd77fc91fe81cd7858f828f0fd160d5e14a1504b086fb1": {
+      "vsize": 113,
+      "weight": 449,
+      "time": 1706814002,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "ed410e02894005a78b048917ecc10ed5056ea0000e12b8150cb6a179db17588a": {
+      "vsize": 142,
+      "weight": 565,
+      "time": 1706874897,
+      "fees_base": 0.0000426,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "5cca367c8752ee40db7f6bba319ee7f340f8fa86e21b57ca55010d766ecfbb11": {
+      "vsize": 110,
+      "weight": 438,
+      "time": 1706863162,
+      "fees_base": 0.00001792,
+      "num_ascen": 10,
+      "num_descen": 4
+    },
+    "5af94e1512168220b4cbc76999765f62b13db6f22d7e05df450d0f56adececf5": {
+      "vsize": 113,
+      "weight": 449,
+      "time": 1706814013,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "16bccbffb4db69c9695dda75053877c8cf5697c3666969044430a2ee1d501498": {
+      "vsize": 153,
+      "weight": 609,
+      "time": 1706875374,
+      "fees_base": 0.00004284,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "80fb5d9110275746dc0f761d3625c5b96b81eaf363f6f2713d945d4003975fa6": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706100115,
+      "fees_base": 0.0000282,
+      "num_ascen": 10,
+      "num_descen": 5
+    },
+    "7aa6c799bab02ee3457d245bd26308296c2979c23eef625855a1426438600e66": {
+      "vsize": 141,
+      "weight": 562,
+      "time": 1706879402,
+      "fees_base": 0.0000148,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "ba82d5e5711979b9d76a1333760c70ec7c966369ade48e10f8aba26707cf715a": {
+      "vsize": 145,
+      "weight": 580,
+      "time": 1706616206,
+      "fees_base": 0.0000319,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "7404ad2ffd57bde9b4496e167dcd4453705275c56297619d3fea5f31d90a58be": {
+      "vsize": 142,
+      "weight": 565,
+      "time": 1706875658,
+      "fees_base": 0.00005254,
+      "num_ascen": 3,
+      "num_descen": 2
+    },
+    "378c51df1513596634f99057d519da1217c37b86ed77e8f77d49419adcd69dc5": {
+      "vsize": 142,
+      "weight": 565,
+      "time": 1705911387,
+      "fees_base": 0.0000286,
+      "num_ascen": 8,
+      "num_descen": 16
+    },
+    "4e7b825a749c739bfd9543bbde8d01110ca693630babd3691ce2cac0ddf5977a": {
+      "vsize": 144,
+      "weight": 574,
+      "time": 1706877128,
+      "fees_base": 0.00004426,
+      "num_ascen": 1,
+      "num_descen": 3
+    },
+    "e3c2a1d99fd85ad071b0903cfca6b02a59408bd18874276b8e0b7d51cc00eb36": {
+      "vsize": 142,
+      "weight": 565,
+      "time": 1706874875,
+      "fees_base": 0.0000426,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "8147770f20ea9946ae16661b931992a9e43fdf0d5e5d303d59a273c2954481b4": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706875656,
+      "fees_base": 0.00004399,
+      "num_ascen": 2,
+      "num_descen": 2
+    },
+    "07229844dce4798bf1d7e3eae12f006b022eb20a2fba44250b3c488569c2deed": {
+      "vsize": 113,
+      "weight": 450,
+      "time": 1706814013,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "325b34ad960cc5d6d6f18acf518a07513c02f83c3e287429dd97d157961165e0": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706693022,
+      "fees_base": 0.00000282,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "cf58f3b11ebc530bdb95f32c4bee407e4c735fbdc187425dcbbc2b28d64df64a": {
+      "vsize": 110,
+      "weight": 437,
+      "time": 1706875651,
+      "fees_base": 0.00004163,
+      "num_ascen": 1,
+      "num_descen": 3
+    },
+    "8e3736da7d5bbf1fc39123339ab0b7088c4616ef7f29bcd7e99f61ec792b442a": {
+      "vsize": 144,
+      "weight": 573,
+      "time": 1706876473,
+      "fees_base": 0.00005731,
+      "num_ascen": 3,
+      "num_descen": 3
+    },
+    "33bd68aec99facdd052aa2459b6f9d760a0b611d66e8ed220a15d7b730e6ce9b": {
+      "vsize": 144,
+      "weight": 573,
+      "time": 1706878418,
+      "fees_base": 0.00004,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "fbdcff0a9bf597d8ef7f6c4599cc3c13c5b74aad46d47dd15e69cb86bae67e01": {
+      "vsize": 142,
+      "weight": 565,
+      "time": 1706875083,
+      "fees_base": 0.00005652,
+      "num_ascen": 2,
+      "num_descen": 2
+    },
+    "c92df9817c9e20c5ed3266c980ca26413df372c544986b0427dc2b2bb970c211": {
+      "vsize": 110,
+      "weight": 437,
+      "time": 1706874893,
+      "fees_base": 0.00002464,
+      "num_ascen": 9,
+      "num_descen": 2
+    },
+    "c5f3098e3a06a1d9a043ba262a9ab15a32c49fa122e3006cacfbdbe0dd9a61bc": {
+      "vsize": 113,
+      "weight": 449,
+      "time": 1706814013,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "32b5608bc53074efbd3f5aad391580132a562a26af8a309bace43ce548185f3b": {
+      "vsize": 153,
+      "weight": 609,
+      "time": 1706878803,
+      "fees_base": 0.00003978,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "c4d2e9636b2f5e8cd3dabb86574d26bbd0d66b4b0b712101c70eeb7e42b03fb4": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706876614,
+      "fees_base": 0.00005358,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "789905b078c196189e40231c0ba26aed7c7f6b22c2229f92b62de257ffc17b65": {
+      "vsize": 142,
+      "weight": 565,
+      "time": 1706874663,
+      "fees_base": 0.00004811,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "697dc7f37962b11ac6bb629c3db59944e6d3f152298d5eec5d093ca460a19403": {
+      "vsize": 113,
+      "weight": 449,
+      "time": 1706814015,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "930cef7958103c7b5d42623d98c1471d5a970729cad3a9c6ad494efce449e6d0": {
+      "vsize": 153,
+      "weight": 610,
+      "time": 1706875538,
+      "fees_base": 0.00004805,
+      "num_ascen": 1,
+      "num_descen": 4
+    },
+    "40c81ffdb503bb776c173398188d315cb833f819d6e87f6b4c5b0aa47a9a0f01": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706100115,
+      "fees_base": 0.0000282,
+      "num_ascen": 12,
+      "num_descen": 3
+    },
+    "08c3f38bb7d5ec122e75f0c9439b50ceb17fb5c7dc1d146b689b6da7683bb318": {
+      "vsize": 153,
+      "weight": 609,
+      "time": 1706874845,
+      "fees_base": 0.00003672,
+      "num_ascen": 1,
+      "num_descen": 3
+    },
+    "528cd8bc642966bd99582ba881b925a8d9f78318a1b4659d554fa9727dc40e7a": {
+      "vsize": 122,
+      "weight": 485,
+      "time": 1705909237,
+      "fees_base": 0.00002687,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "95a419fc026e40ac919c8737a4a23f66d6c3d226f71ac467a4f3eb7fd970e65d": {
+      "vsize": 141,
+      "weight": 562,
+      "time": 1705924489,
+      "fees_base": 0.0000284,
+      "num_ascen": 14,
+      "num_descen": 10
+    },
+    "3e65664fd0cdf6ea2b31a6121c3904eab2f3f2319175f0060386e93951fb672f": {
+      "vsize": 110,
+      "weight": 437,
+      "time": 1706810873,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "594be4b7e3bcdb36aeccde69d32b8a7fb41e85e4b9538d03f90443ddd0919fc9": {
+      "vsize": 113,
+      "weight": 449,
+      "time": 1706814013,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "a5ee8479d0faab74d1f01ac77d734dfe5998e135f2a3f130f62accfc23509c1a": {
+      "vsize": 113,
+      "weight": 450,
+      "time": 1706814031,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "da5b7f90bd900d76ce34b7e354a7da1a7c645a6b3bf37ce43e1bdcd015046af9": {
+      "vsize": 113,
+      "weight": 449,
+      "time": 1706874796,
+      "fees_base": 0.00003862,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "71eb184124f039033c73cde19a90a00afbaee17bd2799d2d3d7accf8f0e1b76f": {
+      "vsize": 113,
+      "weight": 449,
+      "time": 1706814002,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "23705d2fda6f3b279184b064d93c63d170684f202b2c4a07447b98fbe4ec62a4": {
+      "vsize": 113,
+      "weight": 450,
+      "time": 1706813153,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "b366027ea882b9a413bf37524de7b40d319c00ba292f668bd2485e0da443f105": {
+      "vsize": 141,
+      "weight": 562,
+      "time": 1706879770,
+      "fees_base": 0.00019458,
+      "num_ascen": 5,
+      "num_descen": 3
+    },
+    "58e91fd262432fcb355993701d21fc25e40bae120f4d0617d11519b708666b67": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1705912816,
+      "fees_base": 0.0000282,
+      "num_ascen": 1,
+      "num_descen": 5
+    },
+    "117fa1e622178819a292f64b92cb41feb574878745c2275f349fdbb1d63cf312": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706875845,
+      "fees_base": 0.00005171,
+      "num_ascen": 2,
+      "num_descen": 2
+    },
+    "527885e13474ae8c585e064582f36c504f9d2563e78e49a478e29b6544dd1d79": {
+      "vsize": 147,
+      "weight": 585,
+      "time": 1706875733,
+      "fees_base": 0.00000147,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "c4bd4bcc11eb02e2e4703191a8b21f14b6869671a59b38908f7779743474cf05": {
+      "vsize": 113,
+      "weight": 449,
+      "time": 1706814015,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "02819f0f65b091e66a4035da3922cfa056f556d4ed22432da454faf2c17d2827": {
+      "vsize": 141,
+      "weight": 562,
+      "time": 1705924489,
+      "fees_base": 0.0000284,
+      "num_ascen": 15,
+      "num_descen": 9
+    },
+    "0000e5d54b67caf5e4b993e8547fdc60f7d34431849340641b2ad3be7978f574": {
+      "vsize": 111,
+      "weight": 444,
+      "time": 1706785107,
+      "fees_base": 0.0000222,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "a84b99168b95a2e9b66d983699a9e0f1fc6d959ed2baaa92070a5ff43c63fa92": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706103678,
+      "fees_base": 0.00003102,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "05a344cf32fc90a8bec981563b40f3dbd785c7e63bd53ed02f05371cbf4f9feb": {
+      "vsize": 110,
+      "weight": 437,
+      "time": 1706875514,
+      "fees_base": 0.0000598,
+      "num_ascen": 2,
+      "num_descen": 3
+    },
+    "7448fec04999b5a65c99a30bbf46720dd363f376475abb8a1735036fc55e2846": {
+      "vsize": 142,
+      "weight": 565,
+      "time": 1706100115,
+      "fees_base": 0.00002844,
+      "num_ascen": 3,
+      "num_descen": 12
+    },
+    "c8e79dd857da111efc87b0cda052e8db5514b8183ff933f19fa70d0d8b12d63f": {
+      "vsize": 113,
+      "weight": 450,
+      "time": 1706814002,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "07a5cc396f1a6f08e577654cbf514b1afe05e5e2ff938628d8dba9b960bf5de2": {
+      "vsize": 110,
+      "weight": 437,
+      "time": 1706719042,
+      "fees_base": 0.00002464,
+      "num_ascen": 1,
+      "num_descen": 10
+    },
+    "6c0129890a8709a6116e25446c75ed78b8c3b2b2faac550a43b9e4387b05ddc4": {
+      "vsize": 144,
+      "weight": 573,
+      "time": 1706876122,
+      "fees_base": 0.00005731,
+      "num_ascen": 3,
+      "num_descen": 4
+    },
+    "b158e4f277efbf6d4c6f64051cb88790af16efc15031202bdcee00cb949a0234": {
+      "vsize": 144,
+      "weight": 573,
+      "time": 1706879786,
+      "fees_base": 0.00012055,
+      "num_ascen": 8,
+      "num_descen": 2
+    },
+    "ce2714b1c11e1006c6eb779a30c57b95e62b376bba89fa425bff6f2ecc6d13af": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706876553,
+      "fees_base": 0.00005171,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "991d386f9c0410093accbeb783845f6a318841bccc5bedb514f4442d583fb745": {
+      "vsize": 153,
+      "weight": 609,
+      "time": 1706878680,
+      "fees_base": 0.00005049,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "65ce590fcb644e9df8dff55f70e144f4f3cb73315b9f5d1b30b9d35e9fed8237": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706878227,
+      "fees_base": 0.00004333,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "e5a2caf5258eb7dc6869c4df32ab346d880c8ccb4ec47a4ede079ff33539fc44": {
+      "vsize": 144,
+      "weight": 574,
+      "time": 1706876802,
+      "fees_base": 0.0000434,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "dac91a8ea2279d690da0db675c0e2e05d55dc7099956dc724b9ad964aa117eda": {
+      "vsize": 153,
+      "weight": 610,
+      "time": 1706098001,
+      "fees_base": 0.0000308,
+      "num_ascen": 2,
+      "num_descen": 3
+    },
+    "08233f2fafa36f43485056905e969c7fb0a7cccaf1391a1565d02bc96ee52c82": {
+      "vsize": 113,
+      "weight": 449,
+      "time": 1706814013,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "6b972159ddf1f14100684fce17031e7ab03cf85aa9333460d6bebc135110b052": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706875009,
+      "fees_base": 0.00003384,
+      "num_ascen": 2,
+      "num_descen": 3
+    },
+    "c79eac4db9d08ff80fbf6edbe8b0893cff8e5e7299d911669a961edbd48aa230": {
+      "vsize": 141,
+      "weight": 562,
+      "time": 1705924489,
+      "fees_base": 0.0000284,
+      "num_ascen": 16,
+      "num_descen": 8
+    },
+    "c208e8681f4b824054082c37857c9b645e240f25ccb00abe7f5820765da6f1d0": {
+      "vsize": 153,
+      "weight": 609,
+      "time": 1706874887,
+      "fees_base": 0.00003672,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "1da29979e5c058d007dc9c6051da0007435875fd200606c8c340905a12f4b81a": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706878284,
+      "fees_base": 0.00004333,
+      "num_ascen": 3,
+      "num_descen": 2
+    },
+    "3c1445aac6ced6ebbf6cd3fcf8be93215c9ccb82f1d8f4d5f4d85ab75a486f2e": {
+      "vsize": 144,
+      "weight": 573,
+      "time": 1706877468,
+      "fees_base": 0.00004819,
+      "num_ascen": 1,
+      "num_descen": 3
+    },
+    "1e3bd9bb388f434c55f12e9e9587f0e324527fe580ad64db188151cbb4d43624": {
+      "vsize": 141,
+      "weight": 562,
+      "time": 1706876579,
+      "fees_base": 0.0000446,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "71333ff04b054012962dc26383fcd695e1f31f978c37e9d6d362ca512b8184b6": {
+      "vsize": 141,
+      "weight": 562,
+      "time": 1706875094,
+      "fees_base": 0.00004608,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "8bc8a51631f2c36f82d3504617426d7d2cba4184f63a65bf2d2f374fa28290eb": {
+      "vsize": 142,
+      "weight": 565,
+      "time": 1706877643,
+      "fees_base": 0.00005208,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "0000d092bd151b3a96464a14a0e4215a3aebd5e34e8c39797ee4917b49ea250a": {
+      "vsize": 111,
+      "weight": 444,
+      "time": 1706618097,
+      "fees_base": 0.0000222,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "41f862fc0977dea500bd8b85012bdbed7920d8d9a83a7bc7151abc8ef259a080": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706876410,
+      "fees_base": 0.00004397,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "6a65c716cd185a914495fe6072dc8f78ec6ef766d087eba22994b32ea122f220": {
+      "vsize": 122,
+      "weight": 485,
+      "time": 1706813988,
+      "fees_base": 0.00002092,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "ff2f19fdbb8eaa114f3da49d9a7b129fa5cfd1d2c3bf242847e95b532b2644cc": {
+      "vsize": 142,
+      "weight": 565,
+      "time": 1706876734,
+      "fees_base": 0.00004426,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "e408cdae7560e8481fe8850096941eb804b4656efd40efe8bed1452b96aa362a": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706877079,
+      "fees_base": 0.00005611,
+      "num_ascen": 4,
+      "num_descen": 2
+    },
+    "b8b7e88cd6be8772cdff5e31e42d99d97fe09fce810a9e6cd1e62b21e1e20937": {
+      "vsize": 113,
+      "weight": 450,
+      "time": 1706814005,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "1ff3d132b7daf14caeb0430c6d74f2ee85d1dc6d68542bf76ffe870770c05795": {
+      "vsize": 142,
+      "weight": 565,
+      "time": 1706876380,
+      "fees_base": 0.00004518,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "5c995b8b309e6a09dc52cd6bd3056bae01f1e76a040bb4e7807ed03d9cfc01b5": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706875488,
+      "fees_base": 0.00004389,
+      "num_ascen": 2,
+      "num_descen": 2
+    },
+    "64d3fe9ca98296f6f120c5ad094efa83f8e892348fb074ab79aed14b660ecd4f": {
+      "vsize": 144,
+      "weight": 574,
+      "time": 1706875252,
+      "fees_base": 0.00004659,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "2176203b465a311fde752db1aaf85c10ebac0f656c62918e5f0c5e2e6c074c6d": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706879849,
+      "fees_base": 0.00025168,
+      "num_ascen": 19,
+      "num_descen": 2
+    },
+    "e5dc0ec008d465361154fab75060922b05f4bcb309aad4abf9d6b2f7287b7295": {
+      "vsize": 141,
+      "weight": 562,
+      "time": 1706874829,
+      "fees_base": 0.00004174,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "91c4b6f0aa3b632aa6ea5633bf9edd5841a26bc82b8a846aeffba38b221c05e9": {
+      "vsize": 152,
+      "weight": 608,
+      "time": 1706874788,
+      "fees_base": 0.00004275,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "49fb19ea84021d17d1dbc5c3e45c860e5a92cf3f7ddc64100a6c61feeba2ca2a": {
+      "vsize": 110,
+      "weight": 438,
+      "time": 1706874744,
+      "fees_base": 0.0000297,
+      "num_ascen": 1,
+      "num_descen": 3
+    },
+    "580bda2836a84dfd1fa7c7f910e7eb8c104ea0595ef2290d9f2ee3b09c134921": {
+      "vsize": 142,
+      "weight": 565,
+      "time": 1706874890,
+      "fees_base": 0.00003408,
+      "num_ascen": 1,
+      "num_descen": 4
+    },
+    "e84b9584e407d03117699bdb4f84cfe0099f2a7f7f21fe9869de81ba5d096dac": {
+      "vsize": 129,
+      "weight": 513,
+      "time": 1706813995,
+      "fees_base": 0.00002799,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "70001d1aa665732a7b310eb70e8738758b5fffd11ebecd6bbc963ef0f07a34f3": {
+      "vsize": 113,
+      "weight": 449,
+      "time": 1706814013,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "7fc8d0157f08b0fb00d554d0bcfda7c6994f55435f681177f3c74e7a35ca8a9e": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706871818,
+      "fees_base": 0.0000282,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "083431e0189ef0d8927d6a3ea91738016a9bd03686dfec9aa924cb60d975e97c": {
+      "vsize": 153,
+      "weight": 610,
+      "time": 1706875684,
+      "fees_base": 0.00006426,
+      "num_ascen": 2,
+      "num_descen": 2
+    },
+    "48fb9f429ef978694af4de13ba22c4c2a1c22f4c2ba9d73bec2aef44e925cdfc": {
+      "vsize": 153,
+      "weight": 609,
+      "time": 1706875895,
+      "fees_base": 0.00007344,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "1a68757b30428df4ef51b98827c59518e64007c0a7b2f88f794e2b402c9bcec5": {
+      "vsize": 111,
+      "weight": 442,
+      "time": 1706869969,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "2cfa56e671a131ce6c266aa89670f772418af3868f7ab806a35ed3afbb985174": {
+      "vsize": 153,
+      "weight": 609,
+      "time": 1706879596,
+      "fees_base": 0.00007894,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "4d2783f1de3c5741870bf12fa9536d6a7d377c6c30bb57b6654e1792d5997ee7": {
+      "vsize": 153,
+      "weight": 609,
+      "time": 1706875314,
+      "fees_base": 0.00005202,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "a3ca9b7441ce0ceeb39d6319640f77a148543c906d7f2d1ae28aa9d298ba68a0": {
+      "vsize": 113,
+      "weight": 449,
+      "time": 1706814013,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "7547aaab152a9e870d6aa7e81ee018d580898646f46dae779c81e63132637d2b": {
+      "vsize": 143,
+      "weight": 569,
+      "time": 1706693032,
+      "fees_base": 0.00000286,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "25a09118bc23d54b1e834b75518a8540810560a79c087d14d343eb55719cbbd8": {
+      "vsize": 142,
+      "weight": 566,
+      "time": 1706003117,
+      "fees_base": 0.00001208,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "f74748a1fbd9b4d5e1b8880fbbb1b8b0d7497993d73982473946235d4aeebeca": {
+      "vsize": 141,
+      "weight": 562,
+      "time": 1706875808,
+      "fees_base": 0.0000406,
+      "num_ascen": 2,
+      "num_descen": 4
+    },
+    "9d1c4c71322cc431fc0744554e8bcc9a9b2ecda708c8abe1a8370a737f0ee6a3": {
+      "vsize": 113,
+      "weight": 450,
+      "time": 1706814013,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "d8bb5a279bb8c34ef41c60766d66fbadc2d535e75bda8033799c0b9cd71b2b69": {
+      "vsize": 153,
+      "weight": 610,
+      "time": 1706874717,
+      "fees_base": 0.00003825,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "872d17e708c602ebde9ff4a1a239301276a517cf4967410ad031bf05614833d2": {
+      "vsize": 113,
+      "weight": 450,
+      "time": 1706869969,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "854cf94b3713267194e81ef6e8ca4d4ac9e81e6e42b22ee83a8a834ba050cf31": {
+      "vsize": 141,
+      "weight": 562,
+      "time": 1705924489,
+      "fees_base": 0.0000284,
+      "num_ascen": 10,
+      "num_descen": 14
+    },
+    "d4c119d07ff54bd7b3fc555e2f3baa11819c46e167c736c1041b6bda87231bee": {
+      "vsize": 141,
+      "weight": 562,
+      "time": 1705924489,
+      "fees_base": 0.0000284,
+      "num_ascen": 21,
+      "num_descen": 3
+    },
+    "b5871ee7463c1730d12098ea363941d81b8255c87dd66cb287134d4fb93cd01a": {
+      "vsize": 151,
+      "weight": 603,
+      "time": 1706879806,
+      "fees_base": 0.000205,
+      "num_ascen": 2,
+      "num_descen": 2
+    },
+    "234aac618a28eb7decf0d5d3aff2c14f00697918a02c61563e8ccbe71a3380c1": {
+      "vsize": 144,
+      "weight": 574,
+      "time": 1706878293,
+      "fees_base": 0.00003465,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "cc39db9d7a8ad4a367d002e75576dd4775de9828bfad5063af13fbf232ca2b2f": {
+      "vsize": 113,
+      "weight": 450,
+      "time": 1706814005,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "1678fce40b37e9bc5d2e941401676c48cde29fde86f33a5a9e603d0deb9e2ac6": {
+      "vsize": 110,
+      "weight": 437,
+      "time": 1706295132,
+      "fees_base": 0.0000011,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "1d6f9b1a2fde7cf00ee265fb4f41250a320ad1e0167bec6b9d6e04d321ced872": {
+      "vsize": 113,
+      "weight": 449,
+      "time": 1706814002,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "2127680bc0d5f5b1cfa5f50f2d9629e8c8608719ed90c842ea359730c318902a": {
+      "vsize": 110,
+      "weight": 437,
+      "time": 1706726435,
+      "fees_base": 0.00007191,
+      "num_ascen": 5,
+      "num_descen": 2
+    },
+    "1df595fff551be9a2e35558a9c57b249c56313b1c8e790555ee9e7d185c90b5e": {
+      "vsize": 110,
+      "weight": 438,
+      "time": 1706861894,
+      "fees_base": 0.00002016,
+      "num_ascen": 5,
+      "num_descen": 9
+    },
+    "19ec65a19195ca67a308609f2511560ef251ac610241bd7edc87df024b5b8475": {
+      "vsize": 141,
+      "weight": 562,
+      "time": 1706875898,
+      "fees_base": 0.00004333,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "ea7b5b098f69dbd00d878031c80c5dbfcf34e49b49e7a8abbd7180666d4e5ef1": {
+      "vsize": 113,
+      "weight": 450,
+      "time": 1706814013,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "772a22850e6b9a0a2ff5de2972db46a3b1f1356eb30b55f2b45059b54f5af6f0": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706879806,
+      "fees_base": 0.00012055,
+      "num_ascen": 11,
+      "num_descen": 2
+    },
+    "c15afeb2659f60139cdfdd5f8d6ec3116d5fc204abf9b265ff4e973f4c5c5d56": {
+      "vsize": 110,
+      "weight": 437,
+      "time": 1706874990,
+      "fees_base": 0.00003075,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "7d389c3af6ba45adaff30d885d65b1347280737fc535f3453235c7714e7cceaf": {
+      "vsize": 133,
+      "weight": 529,
+      "time": 1706878963,
+      "fees_base": 0.00005911,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "b8ad64689aa4ac780f05c8cebdc3b11b788c6e0e43f42b26002e12d1ce5966aa": {
+      "vsize": 113,
+      "weight": 449,
+      "time": 1706814013,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "0ac9d066cb70e15060b6b0a983a4e624a03d9a65f612c5edeb36e50e614dcb49": {
+      "vsize": 141,
+      "weight": 562,
+      "time": 1706879723,
+      "fees_base": 0.00009137,
+      "num_ascen": 2,
+      "num_descen": 2
+    },
+    "474f02a66ee3f5f85586d46dca16f2b504c58e88d73a4ffb2916872159050c2a": {
+      "vsize": 153,
+      "weight": 610,
+      "time": 1706874959,
+      "fees_base": 0.00003672,
+      "num_ascen": 2,
+      "num_descen": 3
+    },
+    "6a402f8975e6eb46d9c2a92ad0c9474a07f7ba4124096d33614a2bba6d03721e": {
+      "vsize": 113,
+      "weight": 450,
+      "time": 1706814005,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "e972daa74dd541f348bc2b7abc2d9ed972983df82f71357619a4a507f302baa2": {
+      "vsize": 143,
+      "weight": 569,
+      "time": 1706693015,
+      "fees_base": 0.00000715,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "5e897b8e1e7119e28f40fd2f5b95b7b69a7e850173425e233663c6017940ae33": {
+      "vsize": 113,
+      "weight": 449,
+      "time": 1706813145,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "0524b8a63ed0022f6dd1f418a38d610c1170eda9a861ef6eacb018315ca372c2": {
+      "vsize": 113,
+      "weight": 449,
+      "time": 1706814013,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "626cc10189d66e498a6d4ded733f3882c45aee7eb7b65ce36cf03ec432f0e59a": {
+      "vsize": 110,
+      "weight": 438,
+      "time": 1706810873,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "e31e4d80a8047703df969e288ef88ea928b35d1bca38f09a9f9066eb4ba05a75": {
+      "vsize": 153,
+      "weight": 609,
+      "time": 1706874887,
+      "fees_base": 0.0000372,
+      "num_ascen": 1,
+      "num_descen": 3
+    },
+    "282dd58c3c486c203bfd5c719aa231a76a839403e77759490e185403eab2ca9a": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706874970,
+      "fees_base": 0.00004399,
+      "num_ascen": 1,
+      "num_descen": 4
+    },
+    "4aa0b64d934eb801f7abefc9cfbe47672b079c7169a34b8119e16fd0345e01e9": {
+      "vsize": 113,
+      "weight": 450,
+      "time": 1706814013,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "59eaef737d64cd08d023a600bf99836597b4308cb2ba05c780d5dd635ea29d3e": {
+      "vsize": 141,
+      "weight": 562,
+      "time": 1706876932,
+      "fees_base": 0.0000518,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "9b28bdb1402dd7cbb5efe8d6c401e6cf9d925ccb451a04357b1a8c0476fdfeb9": {
+      "vsize": 142,
+      "weight": 565,
+      "time": 1706876303,
+      "fees_base": 0.00005652,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "29001c9547438db1be39734560640030c9b15b942a1815ce615ecfa8ecb9a741": {
+      "vsize": 142,
+      "weight": 565,
+      "time": 1706878189,
+      "fees_base": 0.00004435,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "09c2929bc5999a5bd30cf4b0f03c7a2dfb713caddb40ce113ebe6c2cf858e070": {
+      "vsize": 110,
+      "weight": 437,
+      "time": 1706102212,
+      "fees_base": 0.0000224,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "775316288e086b2286848c7ee637fbb7f804d38de8fc80fdd78a3998297d1f22": {
+      "vsize": 141,
+      "weight": 562,
+      "time": 1706875357,
+      "fees_base": 0.00004526,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "d2aa853ad163acd67c1af74890674bbd4acf37ae952a618b0fb443caebcc5e4b": {
+      "vsize": 153,
+      "weight": 609,
+      "time": 1706874829,
+      "fees_base": 0.00004743,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "47978bf3beb69e8cfcfb6ec2ae8e08f8ed9f3db83ecfb0158476bba264794b97": {
+      "vsize": 113,
+      "weight": 450,
+      "time": 1706814013,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "4d1aa63113c2e9289915f0580793d7ce53b7f30ea25f7567d65d731b07113934": {
+      "vsize": 143,
+      "weight": 569,
+      "time": 1706875498,
+      "fees_base": 0.00004743,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "a42d44b4b3197090e2e59dbb88f4f8f5b8865b079e3dc0981f255783bd70c11d": {
+      "vsize": 113,
+      "weight": 449,
+      "time": 1706869969,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "61c528b5d31a727d6e9fb4fb4664d33326f59aab183d842564d24cbe24d097a5": {
+      "vsize": 110,
+      "weight": 437,
+      "time": 1706869969,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "bcdf1c49148d7c7900c82b8f5db63841dfd37c9331c4fcea393b8ad8a4b502ef": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706876853,
+      "fees_base": 0.00005171,
+      "num_ascen": 1,
+      "num_descen": 3
+    },
+    "31d32515c93820f94bb8b4e817d23af59745cc7926634e7b48d94cc3938e4544": {
+      "vsize": 113,
+      "weight": 449,
+      "time": 1706869969,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "844ce295c59b7a44079e2532fe6f87a426634a7352d03b7d148841eac8337160": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706877272,
+      "fees_base": 0.00004333,
+      "num_ascen": 2,
+      "num_descen": 2
+    },
+    "37cfe1b748b40ac25396418166c56a3f93a802427b97227cb75d3ee4a6dd91b1": {
+      "vsize": 113,
+      "weight": 450,
+      "time": 1706814031,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "f54d0a72c9bd45d7fd320886b7bd81bea1ccd9b15dc7afd5fef0f5e5aa5d909a": {
+      "vsize": 110,
+      "weight": 437,
+      "time": 1706863650,
+      "fees_base": 0.00002464,
+      "num_ascen": 7,
+      "num_descen": 4
+    },
+    "feb0c0085cfc41c25ed486e1996130b09672dc5c690c35984262bc4ae468d6f0": {
+      "vsize": 141,
+      "weight": 562,
+      "time": 1706875692,
+      "fees_base": 0.00003201,
+      "num_ascen": 2,
+      "num_descen": 2
+    },
+    "d2089db96d7a4bb1238853036c0a38f68252d0bcde503cc8a7982d45d2eab3aa": {
+      "vsize": 141,
+      "weight": 562,
+      "time": 1706875742,
+      "fees_base": 0.00005171,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "1cc6800ac6a6699c19df1de3b64c41f6dd8628b38f06e59a1938570631bbbffc": {
+      "vsize": 110,
+      "weight": 437,
+      "time": 1706726005,
+      "fees_base": 0.00002352,
+      "num_ascen": 2,
+      "num_descen": 9
+    },
+    "1eaca26bbb613590d4f52438f5c76b0fcb59f86b96abdfe4464d2eeb1594b33f": {
+      "vsize": 133,
+      "weight": 529,
+      "time": 1706878274,
+      "fees_base": 0.00005911,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "0d6ccb73a409545386c1233213239937d4f3b67dce39a39012ee8988ac5c27f3": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1705912816,
+      "fees_base": 0.0000282,
+      "num_ascen": 3,
+      "num_descen": 3
+    },
+    "2523434b682871c3c06213af0745b78f38e4068a49fbf855a2acf17e7a1807e3": {
+      "vsize": 153,
+      "weight": 610,
+      "time": 1706877420,
+      "fees_base": 0.0000477,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "e69b515d18853c5e4486b3095fb09406b5dc91860083d0259c502832485eb540": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706876047,
+      "fees_base": 0.00004399,
+      "num_ascen": 2,
+      "num_descen": 2
+    },
+    "07c4d8f7c7514f7d9c5b01a4fec46434e5ea89df25d2919190449603e49d0374": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706874685,
+      "fees_base": 0.00003525,
+      "num_ascen": 1,
+      "num_descen": 3
+    },
+    "609cbe1702b5e1fdcb2190d43eacbfd82ace975a930b32c1dd01c3b2a6473622": {
+      "vsize": 153,
+      "weight": 610,
+      "time": 1706102220,
+      "fees_base": 0.0000308,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "a237dcf2e8999e78eb9eef61513203ae25e11da65ec294712083ec05d71bedc2": {
+      "vsize": 141,
+      "weight": 562,
+      "time": 1706730931,
+      "fees_base": 0.00003075,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "da7f076a9865f11cc3b34407a6c32638a78332d6687c38db521b5b4060f9df74": {
+      "vsize": 144,
+      "weight": 573,
+      "time": 1706876815,
+      "fees_base": 0.00004426,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "16377868c67558566ef91fb2e637b4bfd5b6468245337ec19403c248f5ab174a": {
+      "vsize": 144,
+      "weight": 573,
+      "time": 1706877468,
+      "fees_base": 0.00005282,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "7189ba21943e1513fda30680596f70086ee231d6d74f9eba56bfac1e48092e98": {
+      "vsize": 113,
+      "weight": 450,
+      "time": 1706869969,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "53abe68cdaacab98c245a86e2625f357d24b9ad278c44088b4b65baebf0918aa": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706876291,
+      "fees_base": 0.00004405,
+      "num_ascen": 8,
+      "num_descen": 4
+    },
+    "160c6ebbbea725b95c012128a1ea729029bea4a8b17c99789698445e433c78a7": {
+      "vsize": 110,
+      "weight": 437,
+      "time": 1706861894,
+      "fees_base": 0.00001792,
+      "num_ascen": 4,
+      "num_descen": 10
+    },
+    "68763787307ca6f91d455b8f8e2741207ce82b9b51aa2c2fe690a051028b85b1": {
+      "vsize": 113,
+      "weight": 449,
+      "time": 1706814002,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "e625311e4fe5b45993bfbae45c5c2e75ba980753f9382059726b31cd3ab1e876": {
+      "vsize": 144,
+      "weight": 573,
+      "time": 1706875534,
+      "fees_base": 0.00005568,
+      "num_ascen": 1,
+      "num_descen": 3
+    },
+    "634b7bea96ffaab35cddb5f48be69fdf3bfdf95eafb9f07cf52a21a0d4ddc524": {
+      "vsize": 153,
+      "weight": 610,
+      "time": 1706876035,
+      "fees_base": 0.00003978,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "fbc887abe7c5010850dc9c0406498736dc16a7f1edf9c4b86c986021237cbfbe": {
+      "vsize": 113,
+      "weight": 450,
+      "time": 1706816952,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "850c97435dc27227acda3ee06ebe16d8f18025af0e8b2b6866c92e722718135a": {
+      "vsize": 143,
+      "weight": 569,
+      "time": 1706693032,
+      "fees_base": 0.00000286,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "c77d2ecfba46efc7cd0a9b6d3834da570a587d29d2ed2f2d691915cc029c153d": {
+      "vsize": 153,
+      "weight": 609,
+      "time": 1706098001,
+      "fees_base": 0.00003075,
+      "num_ascen": 3,
+      "num_descen": 2
+    },
+    "84aa74e1fb596c7abc172aa5cb6b9c17247baec157c46c29842c96298500f37a": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706877449,
+      "fees_base": 0.00004053,
+      "num_ascen": 2,
+      "num_descen": 2
+    },
+    "d09af0609000c8922484d36fbbe4cc46a9d3e97a4fadb285a2ffc65bf1485ab1": {
+      "vsize": 141,
+      "weight": 562,
+      "time": 1706875064,
+      "fees_base": 0.00003807,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "6818048a31f83452cec793d9dacbbffc90f90c99610c95895e8ca41640942fa0": {
+      "vsize": 141,
+      "weight": 562,
+      "time": 1706879862,
+      "fees_base": 0.00025168,
+      "num_ascen": 21,
+      "num_descen": 3
+    },
+    "bf60497b165fe11a69b72340284148a84629d57999d958f0a98905ffa15bae3a": {
+      "vsize": 113,
+      "weight": 450,
+      "time": 1706814005,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "05ee0443209af96692c43050dc6a952d8fe8ccaee7960a5a1fcce25ac41dd066": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706294096,
+      "fees_base": 0.0000146,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "904bbf810d6b16c10eae28b3663e21b330fcbf055a49b898220631087e1839c0": {
+      "vsize": 142,
+      "weight": 565,
+      "time": 1706874951,
+      "fees_base": 0.0000426,
+      "num_ascen": 1,
+      "num_descen": 4
+    },
+    "491548901bdc2ffda7501f45f61a565b7ad1adf5063dd68fea2ee5576377c17d": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1705912816,
+      "fees_base": 0.0000282,
+      "num_ascen": 4,
+      "num_descen": 2
+    },
+    "fdc502b10cc1381c3f2f72238ef78c2b04b8b8db1db2607936dd20bf86de8a23": {
+      "vsize": 110,
+      "weight": 438,
+      "time": 1706038023,
+      "fees_base": 0.00002304,
+      "num_ascen": 2,
+      "num_descen": 2
+    },
+    "69bab06d40f9c766184419ed9d61d3fcc0b470e23374b1eb98e9e6aeea82aba0": {
+      "vsize": 141,
+      "weight": 562,
+      "time": 1706875538,
+      "fees_base": 0.0000476,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "2e3265f3b035af5a76b954199a4a10b6d63b95134b97c458160cbb67cd9e1730": {
+      "vsize": 110,
+      "weight": 438,
+      "time": 1706875019,
+      "fees_base": 0.00003229,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "14bfa8907bf992377b9ce9b94ed47fd613ec926f98a73c42ec5e4a22cbe718d0": {
+      "vsize": 142,
+      "weight": 566,
+      "time": 1705911374,
+      "fees_base": 0.0000286,
+      "num_ascen": 3,
+      "num_descen": 21
+    },
+    "c14f0c0cfb309bb1fad8389d3ce99944b06571a06672aba97cbd5d62a7cce576": {
+      "vsize": 113,
+      "weight": 449,
+      "time": 1706869969,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "c0112188066525de9c6a4e946aefd4555a7712df6f9cf19df93ed1d4cbc81955": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706877367,
+      "fees_base": 0.00004399,
+      "num_ascen": 10,
+      "num_descen": 2
+    },
+    "2ff3e565c168d7f96871c2c71f78d173eefcffa9804278d4e69be6c5881671c7": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706875691,
+      "fees_base": 0.00004399,
+      "num_ascen": 1,
+      "num_descen": 11
+    },
+    "c8d925952802060dec49513a15fbbd7f17592bb3864485416f044070e1fc8499": {
+      "vsize": 113,
+      "weight": 450,
+      "time": 1706814002,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "11362f39a58d8403e2e9ce7ee1cc431eee7da3edf00f8d7461c5e2e009321ec8": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706876600,
+      "fees_base": 0.00003988,
+      "num_ascen": 2,
+      "num_descen": 2
+    },
+    "960cf0a11c1e8e689c29fa9925318b6955e7e838a5a14d827ac818fad5a5d212": {
+      "vsize": 110,
+      "weight": 438,
+      "time": 1706861894,
+      "fees_base": 0.00001792,
+      "num_ascen": 3,
+      "num_descen": 11
+    },
+    "d9361fd4fbaea0436a12d3342c823fae47c427a3fb51d5248c1dff28e66d0021": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706100112,
+      "fees_base": 0.0000282,
+      "num_ascen": 2,
+      "num_descen": 13
+    },
+    "bede9793690de592b1dbf05edafcc8295fae7539e882a38fa33f01b210555b2b": {
+      "vsize": 144,
+      "weight": 573,
+      "time": 1706877753,
+      "fees_base": 0.00005282,
+      "num_ascen": 2,
+      "num_descen": 2
+    },
+    "afa56aef2d1f1fed2939144af68bc822de1e1cd18eab19ff1cdf129d54c4ded3": {
+      "vsize": 141,
+      "weight": 562,
+      "time": 1706879751,
+      "fees_base": 0.00011632,
+      "num_ascen": 2,
+      "num_descen": 3
+    },
+    "19a3680d104f5b2c62b9ecc8238d4c7532aeda1d6896b052319c4d82242c90d1": {
+      "vsize": 113,
+      "weight": 450,
+      "time": 1706814013,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "a648de96c30edfdfb83dc8e9f5f7c0d2391d6e0bca40a57d85321e3843166c2a": {
+      "vsize": 143,
+      "weight": 569,
+      "time": 1706693032,
+      "fees_base": 0.00000286,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "de44ed3bb65ba8f1257f64dd18525568fa7f5a7cfd36fdad68613c88be8318ed": {
+      "vsize": 113,
+      "weight": 449,
+      "time": 1706813153,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "217120ed618643b599873a37cdf408f9cea65c364819e19cfb4b72762814cca5": {
+      "vsize": 113,
+      "weight": 449,
+      "time": 1706869969,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "79c45a282dc86bd3ffac42d56c707f2f6e8fde3e1db357b75d8ffeaa20eb6146": {
+      "vsize": 144,
+      "weight": 573,
+      "time": 1706875827,
+      "fees_base": 0.00005282,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "3c6f6ac20b20ff3de61a5ed350c7e41d3a97a972850c13e1b7f5e8154fe9c7d7": {
+      "vsize": 111,
+      "weight": 442,
+      "time": 1706869969,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "8df26bb5d4d93069ded6153875b9eba5d7f0f80739610a8c44111309b411e56c": {
+      "vsize": 153,
+      "weight": 610,
+      "time": 1706877458,
+      "fees_base": 0.00005615,
+      "num_ascen": 1,
+      "num_descen": 3
+    },
+    "a98ba1e63defe2545534d37e7fc3065ccb2e469fe55e251918daf5c66abe3cf3": {
+      "vsize": 142,
+      "weight": 565,
+      "time": 1706866891,
+      "fees_base": 0.00000142,
+      "num_ascen": 3,
+      "num_descen": 3
+    },
+    "e3327230c327c1ecfc505dd377ee8d83f803ae3aa1f37ce9f2a6c30d97b50f7f": {
+      "vsize": 153,
+      "weight": 609,
+      "time": 1706875027,
+      "fees_base": 0.00003672,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "02d56dc9d19c92d2e8c2598b14e380be1556c86cd9f3c01247f194d835ca36f4": {
+      "vsize": 110,
+      "weight": 437,
+      "time": 1706868498,
+      "fees_base": 0.0000161,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "eea9881e309354f0670c3026380a096b5413e86d763ace1db84476bd116b2c3d": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706866891,
+      "fees_base": 0.00000141,
+      "num_ascen": 2,
+      "num_descen": 4
+    },
+    "c0ae0c6997540e63909e5b3b0a95b32c00fc63cdb738e640f5342c08a536d519": {
+      "vsize": 141,
+      "weight": 562,
+      "time": 1706877847,
+      "fees_base": 0.00005814,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "abbc62d7a2c6d0daca264a120e989f2dca87e1a98809377e67753fbb5b200445": {
+      "vsize": 113,
+      "weight": 449,
+      "time": 1706814031,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "c2ff8a7d6e3c8ecc827a051da06898a020d2b8c5ebf93f44bbbc2f029f4a8d80": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706878064,
+      "fees_base": 0.00005171,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "92d6689791ac8fe31f474a5b2c9fbe069810907d4ff57ce846c068c880871c36": {
+      "vsize": 141,
+      "weight": 562,
+      "time": 1706867415,
+      "fees_base": 0.00000979,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "74a9a027d20704a4b00dec71773cd218c16ee5cb0785c21569a40d48f7897021": {
+      "vsize": 113,
+      "weight": 449,
+      "time": 1706814005,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "087fddb90f993430d303a1824a46295ea236b9bf445c5e1549f066d0dc99de05": {
+      "vsize": 153,
+      "weight": 609,
+      "time": 1706875129,
+      "fees_base": 0.00003978,
+      "num_ascen": 1,
+      "num_descen": 3
+    },
+    "2a5450376353b06826311364e8fc059ccf6905fb1014edc7853194cdf35c453c": {
+      "vsize": 113,
+      "weight": 449,
+      "time": 1706814005,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "180b1d8bf841c912474f3bd033ead6c74377cf88bee11fce4e20129616ec0ea4": {
+      "vsize": 142,
+      "weight": 565,
+      "time": 1706372282,
+      "fees_base": 0.00003212,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "9c223ad9d9f4b439ba8546de98b86b695308bb357bb481cb25481df748e35d20": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706876888,
+      "fees_base": 0.00005171,
+      "num_ascen": 2,
+      "num_descen": 2
+    },
+    "b4afc56fbf3cb63c3dcb2db9a4f9d8d47a8235aaec0042336a6ad20844b34e31": {
+      "vsize": 144,
+      "weight": 573,
+      "time": 1706875644,
+      "fees_base": 0.00005731,
+      "num_ascen": 1,
+      "num_descen": 3
+    },
+    "42ae9940d0eae91abed068dc965d1a9d59c70982d346f1ae4e27e62fe85b7721": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706875238,
+      "fees_base": 0.0000462,
+      "num_ascen": 2,
+      "num_descen": 4
+    },
+    "57b5c41faa5100d82724c1d595742b4433ec57791936e314f25d29704389aa23": {
+      "vsize": 113,
+      "weight": 449,
+      "time": 1706814005,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "09ae23503afa6017cd68d01e952a5daa97cfc6475c9692e6888f4645bbf9e805": {
+      "vsize": 110,
+      "weight": 438,
+      "time": 1706861894,
+      "fees_base": 0.00001792,
+      "num_ascen": 9,
+      "num_descen": 5
+    },
+    "de35a2ff93845b0474036a8bf1c15e055a32b02733295b95694b725fd87e76cb": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706100115,
+      "fees_base": 0.0000282,
+      "num_ascen": 9,
+      "num_descen": 6
+    },
+    "6e752ab45ff8b98fd87cef7ed037c534a36881b1dfe2765a6a7c8a49bea37b49": {
+      "vsize": 144,
+      "weight": 574,
+      "time": 1706875965,
+      "fees_base": 0.00000429,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "1d2b150cbef4e2182e8cc7c621fd1017aaef4fa3a135a3ca72f719ae65c5f8e1": {
+      "vsize": 113,
+      "weight": 449,
+      "time": 1706814013,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "a11a89af0d561571a7585237b11f585c8aee864fe5068b37e0e43dda7be52c4f": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706876168,
+      "fees_base": 0.00004399,
+      "num_ascen": 6,
+      "num_descen": 6
+    },
+    "277e67c4d7f2a85df05679c727a964556cbc4511553a3eafcd42415baf004b70": {
+      "vsize": 142,
+      "weight": 566,
+      "time": 1706879831,
+      "fees_base": 0.00024745,
+      "num_ascen": 16,
+      "num_descen": 3
+    },
+    "28a7082df14dc8f31a6b2ae9ae40bfbfc7a6b7dc5c3aafa409e245697070bac3": {
+      "vsize": 153,
+      "weight": 610,
+      "time": 1706098001,
+      "fees_base": 0.0000308,
+      "num_ascen": 1,
+      "num_descen": 4
+    },
+    "7de0acb71cbca9626c4953f8116c2016ed4aa2a2e96fe377a4e9849fdd0e5c91": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706877991,
+      "fees_base": 0.00004053,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "573fa4ff3d473a38bff5709ea811744fda48c3756850b72ba7f4d8be09b661ef": {
+      "vsize": 113,
+      "weight": 450,
+      "time": 1706813995,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "cd401185eeec3cd9eddd345b15e8bb2ee1ef48a693584f38da91f5e353044811": {
+      "vsize": 113,
+      "weight": 449,
+      "time": 1706814013,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "a865df57786f62c6202abf204ffb65b09e64b1b4c8a3e9a30961af195abe0ef6": {
+      "vsize": 143,
+      "weight": 569,
+      "time": 1706618203,
+      "fees_base": 0.00001287,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "15f41751ed5385092c102c5d40a7a3104514843e38876ae2985ff453d4373d5e": {
+      "vsize": 111,
+      "weight": 441,
+      "time": 1706869969,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "0eb491bf58f036d3ba1f1ce7355c46feef6c602dd3d25f86978f12cb39d53a6d": {
+      "vsize": 142,
+      "weight": 565,
+      "time": 1705924489,
+      "fees_base": 0.0000286,
+      "num_ascen": 11,
+      "num_descen": 13
+    },
+    "895a57b03d331d63488fec082678fd4fcf76384cb54824d36e496620a67c0efe": {
+      "vsize": 153,
+      "weight": 610,
+      "time": 1706874915,
+      "fees_base": 0.00003672,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "a84d6e9cdcefe5634cce13f1ca68cc72ffe41316bd04b53706c55472276b64a6": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706879735,
+      "fees_base": 0.00008122,
+      "num_ascen": 2,
+      "num_descen": 2
+    },
+    "e62579bfe9094fe94a5ab70ccb7bb56f56b9726c203c15473570e4436ac56bc5": {
+      "vsize": 110,
+      "weight": 437,
+      "time": 1706875217,
+      "fees_base": 0.00003229,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "cd0d023daf57839ea357dde5e20b24750774c790fafd920eb935584b32eb8426": {
+      "vsize": 111,
+      "weight": 442,
+      "time": 1706812282,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "d0d5a0e5b2a18e958bee79ab75d361994d490c707bda9aaaf5a7ceabb8a412ed": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706866891,
+      "fees_base": 0.00000141,
+      "num_ascen": 1,
+      "num_descen": 5
+    },
+    "c14ffb77991ac79f79e91023aad4d7277be6c606298993ccc060a70da409c901": {
+      "vsize": 142,
+      "weight": 566,
+      "time": 1705911381,
+      "fees_base": 0.0000286,
+      "num_ascen": 5,
+      "num_descen": 19
+    },
+    "f5b0e7531728d7a422183af9448afca82e292eab6a26435672f1b91eb38c8cec": {
+      "vsize": 110,
+      "weight": 437,
+      "time": 1706861894,
+      "fees_base": 0.00001792,
+      "num_ascen": 7,
+      "num_descen": 7
+    },
+    "eef5cd1f87f15f0a95097fcd08d1fcbcb56e080acc109e9a21b2b59f6783194b": {
+      "vsize": 113,
+      "weight": 450,
+      "time": 1706814002,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "e22a190aeab44d5faa07647e55c1fe9d2de079d135a84bd90c097d69b0da2939": {
+      "vsize": 144,
+      "weight": 573,
+      "time": 1706875833,
+      "fees_base": 0.00005282,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "e9e562a2bc7c6c45c1d0d3b1d3213b2afedc59242609b8f842e72553793e150f": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706876232,
+      "fees_base": 0.00004399,
+      "num_ascen": 7,
+      "num_descen": 5
+    },
+    "184fe119e1cbbd3a5c8a4eb6ec2974df36c6d485adec7ba801a5aa1839d59b93": {
+      "vsize": 110,
+      "weight": 438,
+      "time": 1706813976,
+      "fees_base": 0.0000224,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "6bc13c62d63826575341b3c508ab54dc91c605893165507db6898043bc001aa4": {
+      "vsize": 153,
+      "weight": 610,
+      "time": 1706870112,
+      "fees_base": 0.00003672,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "e86e67ce340dbf3e1857f2d54a9886c7c6ac77c7ddf8db4dc8a12979aedfb082": {
+      "vsize": 142,
+      "weight": 565,
+      "time": 1706877441,
+      "fees_base": 0.00005651,
+      "num_ascen": 2,
+      "num_descen": 2
+    },
+    "78db65511eb46bbd58f2ce8ec855dd32aae063fe0d6cb76ce2ab4022b2935d9f": {
+      "vsize": 143,
+      "weight": 569,
+      "time": 1706693032,
+      "fees_base": 0.00000286,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "e9d1ddbb90204c1d783c7b24d1c79759fab94219ac0fc996488fb33c7cd2bc5c": {
+      "vsize": 111,
+      "weight": 441,
+      "time": 1706869969,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "b14e8303c9da812df6127e26f3efee4b9b79bf1660b6e700714cab99c432587d": {
+      "vsize": 142,
+      "weight": 568,
+      "time": 1706874661,
+      "fees_base": 0.00004402,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "98bb795c7872200aed0f1c9083299670bacb77cda1db27002e045c424428156f": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706876292,
+      "fees_base": 0.00005611,
+      "num_ascen": 2,
+      "num_descen": 4
+    },
+    "9d39e770928fe8104696990eb4052cb73989b2f4ba206080fd841d0c61f1c5f5": {
+      "vsize": 113,
+      "weight": 449,
+      "time": 1706869969,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "beca214f5587da3d46cabe3294ef7f804685a937bdd9b7a7ab1aa448c64dd551": {
+      "vsize": 110,
+      "weight": 438,
+      "time": 1706863650,
+      "fees_base": 0.00002464,
+      "num_ascen": 4,
+      "num_descen": 7
+    },
+    "3ac8305fec40306526fffe70a3bace7c6cb83419444ef825ef6bf9f6c7f77ddb": {
+      "vsize": 111,
+      "weight": 442,
+      "time": 1706869969,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "c6fe8b483ce4d036eaaaa8a5f6049f35b4af368f2cb4f2e9bf3383dbae08abb2": {
+      "vsize": 144,
+      "weight": 573,
+      "time": 1706876775,
+      "fees_base": 0.00005731,
+      "num_ascen": 3,
+      "num_descen": 3
+    },
+    "bef573f707d7c1f4fea4de8effca9aaa927970590c13d11cbdce1c4a262d9fc5": {
+      "vsize": 144,
+      "weight": 573,
+      "time": 1706876117,
+      "fees_base": 0.00005731,
+      "num_ascen": 2,
+      "num_descen": 5
+    },
+    "a138158248b42f7e28db31fddceae92de8638aef877435d6700d0e6ce3c2ef28": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706875225,
+      "fees_base": 0.00003384,
+      "num_ascen": 3,
+      "num_descen": 2
+    },
+    "3f45bd968db298a7a2e4062f2ae7a9efb29a0198a3b2b9e9e78b6827f78aa1cd": {
+      "vsize": 144,
+      "weight": 574,
+      "time": 1706876331,
+      "fees_base": 0.00005282,
+      "num_ascen": 2,
+      "num_descen": 2
+    },
+    "233c16b12d27c6f65c91493e1ab0433a7d9aca2598ae0fdf51b7d06527f7c9d2": {
+      "vsize": 153,
+      "weight": 610,
+      "time": 1706879061,
+      "fees_base": 0.00003672,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "759f96ea954f3cee8bd39d0b647dd1fe3c7e9125c6a11e8e3cce0a294c803075": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706100115,
+      "fees_base": 0.0000282,
+      "num_ascen": 6,
+      "num_descen": 9
+    },
+    "1a0dcdad429ffd590d7b5f74f624407dc0a00a899efed072c12f2b947f78b1ff": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706877892,
+      "fees_base": 0.00003988,
+      "num_ascen": 2,
+      "num_descen": 2
+    },
+    "73615da815f01af2b28e15b17c5ec4a8d67ec30970f870cc7f4b9a094bbf8895": {
+      "vsize": 113,
+      "weight": 450,
+      "time": 1706814002,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "3afff43e4d4d254e27c204f2e991612e8481a019075849f65e0d9f92bce05b9a": {
+      "vsize": 110,
+      "weight": 437,
+      "time": 1706290861,
+      "fees_base": 0.00000654,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "f2ef21d83d2edd682e9bccb782f1c8634e7b2ce733865700b8016dfeb42a6261": {
+      "vsize": 142,
+      "weight": 565,
+      "time": 1705911381,
+      "fees_base": 0.0000286,
+      "num_ascen": 6,
+      "num_descen": 18
+    },
+    "e5e746d8a150971d586153b812623852e2c792a874dc33016b3c7aec927bb95e": {
+      "vsize": 142,
+      "weight": 565,
+      "time": 1706877193,
+      "fees_base": 0.00003848,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "c65e48630d160a90f6606c94ec75716444f726ae4e7d3f5020d74d6a143ee495": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706875121,
+      "fees_base": 0.00003948,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "edd33d447b6ddf36f2ed6a1251368be63137fd0986e66f725d17386769f30dd3": {
+      "vsize": 142,
+      "weight": 565,
+      "time": 1706871973,
+      "fees_base": 0.00002825,
+      "num_ascen": 1,
+      "num_descen": 3
+    },
+    "e50c4c951cf78f760f973e7b4538c1e539203f40390056ed6506dc3b86af035d": {
+      "vsize": 113,
+      "weight": 449,
+      "time": 1706814013,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "82bd696cf5f51851e0d01403f354d3b82d630b40c2cba796cfeb5c075b6499f9": {
+      "vsize": 142,
+      "weight": 566,
+      "time": 1706008816,
+      "fees_base": 0.00001859,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "bc921fd0442bae6f271bed196d6f3a2ba69f2bc12ee094f7cea1e03c1fb4d570": {
+      "vsize": 144,
+      "weight": 573,
+      "time": 1706876591,
+      "fees_base": 0.00005731,
+      "num_ascen": 2,
+      "num_descen": 4
+    },
+    "1a8051542dc8fe3cc9b7b8f41472bfe004177096a96bfc3f8b136b2758c7325a": {
+      "vsize": 141,
+      "weight": 562,
+      "time": 1706875783,
+      "fees_base": 0.00004053,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "91ffc9b06766d9ffd78f1d6cc70e94d7cad48c5b5e0c85432bb2c9a8759c556f": {
+      "vsize": 144,
+      "weight": 573,
+      "time": 1706878304,
+      "fees_base": 0.00004493,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "bd48a01faf5c08544d947c598461365f2632998657aa33292d6ccd808c13f120": {
+      "vsize": 142,
+      "weight": 565,
+      "time": 1706876074,
+      "fees_base": 0.00004082,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "8b26f352ffa3d9dbc7c8edf1e32f2998d3698a984340b2e92ae29e7e491b5be2": {
+      "vsize": 113,
+      "weight": 450,
+      "time": 1706813995,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "cd93273178b2f8c63b5b20301586260eb22c0782106996ddab717a4a5429d1c1": {
+      "vsize": 142,
+      "weight": 566,
+      "time": 1706875656,
+      "fees_base": 0.00005208,
+      "num_ascen": 2,
+      "num_descen": 2
+    },
+    "7a4b58724a59c16bd44a476f2c9bcecc7d040dcfe6290042f503d243dd45988a": {
+      "vsize": 113,
+      "weight": 449,
+      "time": 1706814013,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "c467b73cab2baa2699bd951cbf77c1134d9d5e9d8a058edf41b1242bbf3d9bc0": {
+      "vsize": 110,
+      "weight": 437,
+      "time": 1706726435,
+      "fees_base": 0.00004294,
+      "num_ascen": 4,
+      "num_descen": 3
+    },
+    "3e5f87cbae47273e0dbc75fea5c53552a14ff8e1e3d1dadb4e3ac7ee39bca407": {
+      "vsize": 113,
+      "weight": 449,
+      "time": 1706814015,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "d67ae4944f90e6fbde4208e7e23db0068ac4c1eb85cccbf18797a21a3310bf5d": {
+      "vsize": 141,
+      "weight": 562,
+      "time": 1706878119,
+      "fees_base": 0.00006768,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "a0e2ba92c4787909c6a16fa460e0a33faa09aef9a2586c7379b370846802b4bb": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706874809,
+      "fees_base": 0.00004053,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "8e3a28c2f4550f0e28d6c6f57237349344a0d1bb637a8cb825e7b6c97106fd08": {
+      "vsize": 142,
+      "weight": 565,
+      "time": 1706875515,
+      "fees_base": 0.00005651,
+      "num_ascen": 1,
+      "num_descen": 6
+    },
+    "2835a27789b868b873545a96ec5f38e47f686de82981c251737ad23bc0bedc98": {
+      "vsize": 113,
+      "weight": 450,
+      "time": 1706814002,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "62d121b5860ca6143672dc431f78c3cd7be7e6002374b1379687c968138845a0": {
+      "vsize": 142,
+      "weight": 568,
+      "time": 1706102220,
+      "fees_base": 0.00002841,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "1e533bcfc3631618d7d9a36bd419d38dd5e6b99f92926fc27a1384c6b2dfdd7c": {
+      "vsize": 142,
+      "weight": 566,
+      "time": 1706037126,
+      "fees_base": 0.00002964,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "c36c7c135421ad072960099166f29c4a6d99907a0bcc1f75ab577573f0fcbbed": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706875837,
+      "fees_base": 0.00004399,
+      "num_ascen": 3,
+      "num_descen": 9
+    },
+    "5f080bdee4cded2310721af248fac0b387c701c1c78dc3052faa0bfa5e880a74": {
+      "vsize": 113,
+      "weight": 450,
+      "time": 1706814002,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "de0f5f0c28ab6c9b2d85226d98d567bc0276de2237ea6b4993f6be774fe45314": {
+      "vsize": 142,
+      "weight": 566,
+      "time": 1706037364,
+      "fees_base": 0.00002956,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "f6d224e827bf1bf79d2738a21c33b39511049d4a1156064f012621bf6d0ca7ff": {
+      "vsize": 141,
+      "weight": 562,
+      "time": 1706876006,
+      "fees_base": 0.00004053,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "53a2e2f989d601ba40366e8faaa871eea9a7b5d677e0de2eff7778deede81f28": {
+      "vsize": 113,
+      "weight": 449,
+      "time": 1706814045,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "c878969842eb04e97c1142eb964ca7ece3c83e1ca99486c5630d10d79b72150c": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706875171,
+      "fees_base": 0.0000423,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "e86a3490a3128b096183d2a9991ef9087a9106ad7caa72accf7ab2e07d1731fb": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706100112,
+      "fees_base": 0.0000282,
+      "num_ascen": 1,
+      "num_descen": 14
+    },
+    "dc02b63ce457ff824aecbb48a6eca714ec3664a554f080e5b92171dc5de0746b": {
+      "vsize": 110,
+      "weight": 437,
+      "time": 1706872449,
+      "fees_base": 0.00002016,
+      "num_ascen": 12,
+      "num_descen": 2
+    },
+    "a666adde846abe1a4ae17e78192037687298b404e580d6e104d6efd9e39a7b68": {
+      "vsize": 113,
+      "weight": 450,
+      "time": 1706814002,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "7bc6658764c1fecee77fa472c0d53c87d378578064359665523186565aa8d7a1": {
+      "vsize": 111,
+      "weight": 442,
+      "time": 1706869969,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "d2748cdf63739b5ba43d8aaaa8546b9b0aa76bb02e14ae0b2b17f22e0ac2f37c": {
+      "vsize": 113,
+      "weight": 450,
+      "time": 1706814013,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "22001093d3377ce73f0309d149b466908a3faeecb6b3d17c67f716b455da1784": {
+      "vsize": 113,
+      "weight": 450,
+      "time": 1706814002,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "c25fe290b4ae1d0bb751a792653215091a5e302460b4951d258fcfb64c1caa5b": {
+      "vsize": 113,
+      "weight": 450,
+      "time": 1706814031,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "7484153b5a34a7b40252b590d0bfd413de613b1eb5a2f2d55e1dec60e2cfb288": {
+      "vsize": 153,
+      "weight": 609,
+      "time": 1706875133,
+      "fees_base": 0.00005251,
+      "num_ascen": 1,
+      "num_descen": 3
+    },
+    "9b1bfb61e4b74018fb6aff5f4129876f298ef2cc10eab861de2fc0dfdaacf436": {
+      "vsize": 153,
+      "weight": 609,
+      "time": 1706879481,
+      "fees_base": 0.00006885,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "3881b51dbdeaaa7630033637290d1bb8007405a0ada0f6be5b937f4573a34d79": {
+      "vsize": 113,
+      "weight": 449,
+      "time": 1706814002,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "0767f4ac063067a2d57f11c5da15c4c56b430886f2b023f07fc1dc221aa7c7fc": {
+      "vsize": 110,
+      "weight": 437,
+      "time": 1706863650,
+      "fees_base": 0.00002016,
+      "num_ascen": 6,
+      "num_descen": 5
+    },
+    "3e00ddfce474e834d04ad55bc41cf820377f158cdb157a9c67a5635d453f9e17": {
+      "vsize": 153,
+      "weight": 609,
+      "time": 1706876035,
+      "fees_base": 0.00006885,
+      "num_ascen": 1,
+      "num_descen": 4
+    },
+    "146fe1a37a78e6df50560500b172ab91b562e2f4e3e706caa03b25aa4f087ad6": {
+      "vsize": 141,
+      "weight": 562,
+      "time": 1706874696,
+      "fees_base": 0.00004053,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "d2b16b397d8091bf989c6f235ee43d72067bc67cd5ab026fd74bdafb52d91efb": {
+      "vsize": 141,
+      "weight": 562,
+      "time": 1706876562,
+      "fees_base": 0.00005358,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "5767b47fce787b9a20386336bb78af4f37135ae428f2fc876986b814c1ce859d": {
+      "vsize": 110,
+      "weight": 438,
+      "time": 1706867298,
+      "fees_base": 0.00002464,
+      "num_ascen": 8,
+      "num_descen": 3
+    },
+    "3fcb4840091a27d943e68d480b1de5a19577465cb26ffaf503a9d6c3be8d9ec6": {
+      "vsize": 113,
+      "weight": 450,
+      "time": 1706814002,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "c8b330bee27f29c145548d1c9899509673715579872077c67ff994dd67121c28": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706875080,
+      "fees_base": 0.00003988,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "90ba08ed1b7a3c14ef4eec8b68eed1cc843fa48f7dd1e95263f4e0906397d28a": {
+      "vsize": 111,
+      "weight": 442,
+      "time": 1706869969,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "5cede684205b966d2fbe8aaa980551a67ddcb4beb97afb0caa4274643eef8858": {
+      "vsize": 144,
+      "weight": 573,
+      "time": 1706868896,
+      "fees_base": 0.0000144,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "2a610dc5d73c5563029045f1131da060f5656dde8f0b154025cf5baa13e43487": {
+      "vsize": 141,
+      "weight": 562,
+      "time": 1706875264,
+      "fees_base": 0.0000476,
+      "num_ascen": 3,
+      "num_descen": 2
+    },
+    "66dcd38fd5a5f2386ee86b83275685044bf3b37d0c4bd2e39d3768c97069f4f7": {
+      "vsize": 144,
+      "weight": 573,
+      "time": 1706875470,
+      "fees_base": 0.00004277,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "ac772d0374f9161e7c12e38108fde00b542753da274d293867141eaa74f1b6ca": {
+      "vsize": 113,
+      "weight": 449,
+      "time": 1706814013,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "722838a1256db4650dfde93b6d92ee9873a8ab1336c031022f4f1b2230779393": {
+      "vsize": 141,
+      "weight": 562,
+      "time": 1706879757,
+      "fees_base": 0.00011632,
+      "num_ascen": 3,
+      "num_descen": 2
+    },
+    "551cd094daf692645c54e241ec790827558062bf78e1f2410a3fd42bf8c33518": {
+      "vsize": 110,
+      "weight": 438,
+      "time": 1706870552,
+      "fees_base": 0.00001792,
+      "num_ascen": 11,
+      "num_descen": 3
+    },
+    "b135481a584e2d80429fcf6d0b441df49da46efc1821e88b4797d33adaa38db2": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706879799,
+      "fees_base": 0.00021784,
+      "num_ascen": 10,
+      "num_descen": 3
+    },
+    "09125f8e2bc91b47ba0536fdc66d85313f9085f5b74559f62d1d9218b265971d": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706875951,
+      "fees_base": 0.00004399,
+      "num_ascen": 4,
+      "num_descen": 8
+    },
+    "46c58eb82649392fea367d3aa36be99cbf5b148692429149c646f4148443f077": {
+      "vsize": 110,
+      "weight": 437,
+      "time": 1706290822,
+      "fees_base": 0.00000654,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "80cde478326c9dc9686bc3d5f51daefe3dc60c365943f88acab90bc2725f5ecc": {
+      "vsize": 140,
+      "weight": 560,
+      "time": 1706100115,
+      "fees_base": 0.0000282,
+      "num_ascen": 8,
+      "num_descen": 7
+    },
+    "f51a938ddc2c6746e668420e790c964dbdb2e1f25c8b959eca9366390829291f": {
+      "vsize": 142,
+      "weight": 568,
+      "time": 1706876802,
+      "fees_base": 0.00003834,
+      "num_ascen": 2,
+      "num_descen": 2
+    },
+    "c3cb75720ac0237af89577270c9f4bc448faed2c5d69d5f54f20e416374bb85d": {
+      "vsize": 153,
+      "weight": 610,
+      "time": 1706874911,
+      "fees_base": 0.00003672,
+      "num_ascen": 2,
+      "num_descen": 3
+    },
+    "e19c39e978e0f490db13f1ee33b8d468cf46a5924ccbcd8eddeb87e7191de89f": {
+      "vsize": 113,
+      "weight": 449,
+      "time": 1706814013,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "86aa981b20922c0769cee55bd3dfdb8a726a4c5eee052c3dc09dd16c3e1ceb8e": {
+      "vsize": 142,
+      "weight": 565,
+      "time": 1706875308,
+      "fees_base": 0.0000442,
+      "num_ascen": 1,
+      "num_descen": 3
+    },
+    "aa637153dff7665069e5e77735f15f29392aa5c1e3d67e83df076e4ddc63e543": {
+      "vsize": 142,
+      "weight": 565,
+      "time": 1706875655,
+      "fees_base": 0.00005651,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "086888e7dd125f3782b2b6ec44e9ae34f89179f447e7100f9fcfdbd4caa78fe9": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706100115,
+      "fees_base": 0.00002864,
+      "num_ascen": 11,
+      "num_descen": 4
+    },
+    "96d9368b253f0d5c0c144cd383c9ffc57d19a15f46ce35cd8ee0c5444fadd151": {
+      "vsize": 111,
+      "weight": 441,
+      "time": 1706869969,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "825321ef62655f2652fe7137cdf23fdc15379d5097e533abe0a88f4cd11a457f": {
+      "vsize": 141,
+      "weight": 564,
+      "time": 1706879470,
+      "fees_base": 0.00013442,
+      "num_ascen": 2,
+      "num_descen": 2
+    },
+    "ff42c529bbb6f63b333c3a1c0a0d7512a3e8bea00c07ab42a35d3f7c9a09fbbe": {
+      "vsize": 113,
+      "weight": 450,
+      "time": 1706814002,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "06ccf5c8a4422d80529fed281451f925ac111353bb07b429425bf5de0051831e": {
+      "vsize": 153,
+      "weight": 610,
+      "time": 1706874971,
+      "fees_base": 0.00003672,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "ec539531d08a8655334186c82d0b3e032b40c0dedfa01c3f29921ea92e1b3096": {
+      "vsize": 141,
+      "weight": 564,
+      "time": 1706875558,
+      "fees_base": 0.00004896,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "f7cb910770c970d16a5ded1bc39f104e270503a50225c303066c67e555d5ee84": {
+      "vsize": 144,
+      "weight": 573,
+      "time": 1706876473,
+      "fees_base": 0.00005282,
+      "num_ascen": 2,
+      "num_descen": 2
+    },
+    "2aa669d6689698e6b0fac4e73c538a12fd32dfc66cd1674f29fb880908dba5b5": {
+      "vsize": 142,
+      "weight": 565,
+      "time": 1706730834,
+      "fees_base": 0.00003097,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "bab6844b8311d777e0333354edd80ce0c4a26d9ae0545d8a14c859c7020f2179": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706875057,
+      "fees_base": 0.00004371,
+      "num_ascen": 3,
+      "num_descen": 2
+    },
+    "fca736b38d455eafa15d8c7107a1f6c45f7411cfb851ba5a054a4bec6bd2c1bd": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706693022,
+      "fees_base": 0.00000282,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "6c522707f5c6e988715082e43e5123f7f7bbf7c001d88f2e2d081a7767f5ab7a": {
+      "vsize": 113,
+      "weight": 449,
+      "time": 1706814002,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "8cf5f24a2923846bb4ef3adc6a3d92bfd9db6334ab612b305eb177d59863f9d9": {
+      "vsize": 144,
+      "weight": 573,
+      "time": 1706875571,
+      "fees_base": 0.00004493,
+      "num_ascen": 1,
+      "num_descen": 3
+    },
+    "19087cadbe374d08763f28f8d39830fb5f7309159639436e830e6a7641de1e9f": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706866891,
+      "fees_base": 0.0000423,
+      "num_ascen": 4,
+      "num_descen": 2
+    },
+    "b628d08a2f8168895910eb307a7983bfe89a733041c237922e9ed7d62dfe0211": {
+      "vsize": 141,
+      "weight": 562,
+      "time": 1706877663,
+      "fees_base": 0.00004743,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "571749ba28f375a872c9022303bab7b60957bdfccbd1ba30158de9265ca435b7": {
+      "vsize": 110,
+      "weight": 437,
+      "time": 1706869969,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "de0469c3e5c74d55a690b7818168a4cf14d5e2505e8ee92fdb9cbdb5b48f6f1f": {
+      "vsize": 143,
+      "weight": 569,
+      "time": 1706693041,
+      "fees_base": 0.00000286,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "5dfef058684dd0ec6009112314efe42257bd2f474862d0dd047a0d07b8738229": {
+      "vsize": 113,
+      "weight": 449,
+      "time": 1706814031,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "ecd5c43b9697ebaf0349af5078737dbf6bcd702324424a85c5c5d66e34d2c58e": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706875210,
+      "fees_base": 0.0000462,
+      "num_ascen": 1,
+      "num_descen": 6
+    },
+    "9ff51c084b8a8b1ece97b219ea70e24191d1f36a2bd201adcc11f07086f20efe": {
+      "vsize": 142,
+      "weight": 568,
+      "time": 1706875687,
+      "fees_base": 0.00005112,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "676d62551e4377da0b6552ceab5eb9a49384f6ba74972696f2c0c1c56052fadb": {
+      "vsize": 142,
+      "weight": 565,
+      "time": 1706862287,
+      "fees_base": 0.0000226,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "aef4923379ee6aa7b76ba3c2ce4e1341e776483a59242026491d0d20deefb790": {
+      "vsize": 153,
+      "weight": 609,
+      "time": 1706875314,
+      "fees_base": 0.00004743,
+      "num_ascen": 1,
+      "num_descen": 3
+    },
+    "73a0ffd81b1204ff3d91d63734dae479f361a028ac541f0bd5316f290a16611f": {
+      "vsize": 143,
+      "weight": 569,
+      "time": 1706693022,
+      "fees_base": 0.00000429,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "a32cda9b34dd7d907e2f03d494a72a28d88448c60720c293cfdd9db1e7bd604f": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706877730,
+      "fees_base": 0.00005611,
+      "num_ascen": 4,
+      "num_descen": 2
+    },
+    "ea5011df45cfa2d14418717b7a4db77075cfc885fec3c19aa1e87573006ba2fd": {
+      "vsize": 144,
+      "weight": 573,
+      "time": 1706874923,
+      "fees_base": 0.0000432,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "d2025ee0688c034d40eada46feb390a146c125216f45a736f42c1a434a1e6438": {
+      "vsize": 110,
+      "weight": 437,
+      "time": 1706863650,
+      "fees_base": 0.00002464,
+      "num_ascen": 3,
+      "num_descen": 8
+    },
+    "b256714ce65131a80d95501c3d46582c67f9a5bbca990d81a117fdc36f3574ab": {
+      "vsize": 110,
+      "weight": 438,
+      "time": 1706038021,
+      "fees_base": 0.00002304,
+      "num_ascen": 1,
+      "num_descen": 3
+    },
+    "a072df3dc032557975ea7bcda86bed17785c9297ad1f5b53d21ed88e3feee578": {
+      "vsize": 143,
+      "weight": 569,
+      "time": 1706693032,
+      "fees_base": 0.00000286,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "d0319f6fbec0a7e4ac2db4ad3e7a607969da51bd7279c53715ad4442842b022a": {
+      "vsize": 113,
+      "weight": 449,
+      "time": 1706869969,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "0ee952b87f7787495661dac55c0d5ef047d1f37bd832b8c3b5a58048d24f189d": {
+      "vsize": 110,
+      "weight": 440,
+      "time": 1706869969,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "bdd092a8c66117af0379865baa7963b333fcbd74031e4743bb9fa30fd445ef4a": {
+      "vsize": 113,
+      "weight": 449,
+      "time": 1706814031,
+      "fees_base": 0.00000113,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "ffbf991043de3ac495370e0fceceb573ef33dc5613e12599211e634c34225398": {
+      "vsize": 110,
+      "weight": 437,
+      "time": 1706861894,
+      "fees_base": 0.00001792,
+      "num_ascen": 6,
+      "num_descen": 8
+    },
+    "0e2d6020bfd16ba4135a9c867cc2af892741eb5ada8646e90eab18e69dd986d2": {
+      "vsize": 153,
+      "weight": 610,
+      "time": 1706102220,
+      "fees_base": 0.0000308,
+      "num_ascen": 1,
+      "num_descen": 2
+    },
+    "484eed378c3f9401303eb9dd94ee3e7c956dc0b4d6a6021a2ebc3101b36ba99d": {
+      "vsize": 144,
+      "weight": 573,
+      "time": 1706875827,
+      "fees_base": 0.00005731,
+      "num_ascen": 1,
+      "num_descen": 5
+    },
+    "98cebab24fd7e4a1f394cf2be9d6f828960f560dd382379828951f76be8e87f4": {
+      "vsize": 141,
+      "weight": 561,
+      "time": 1706100115,
+      "fees_base": 0.0000282,
+      "num_ascen": 7,
+      "num_descen": 8
+    }
+  }
