@@ -1,8 +1,8 @@
 // Importación de macros y dependencias externas
 use bitcoincore_rpc::{Auth,Client};
 
-const USER:&str = "userX";
-const PWS:&str  = "wsx";
+const USER:&str = "tu usuario de Bitcoin Core";
+const PWS:&str  = "tu contraseña de Bitcoin Core";
 
 // Conexión con el nodo Bitcoin Core
 pub fn conex() -> Client {
