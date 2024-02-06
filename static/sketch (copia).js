@@ -16,19 +16,20 @@ let rects_data = [];
 let txs_data_descen = [];
 let txs_data_ascen = [];
 
+
 let switch_process = "rangos";
 
 let radio_ascen_descen = 30;
 
 let image_row_arrow = null;
 
-let max_min_weight_fees = [ max_weight=0, min_weight=0, max_fees=0, min_fees=0];
-
 
 function setup() {
   createCanvas(720, 650);
+  //Trabaja en radianes
+  //angleMode(
 
-  image_row_arrow = loadImage('/static/home.jpg');
+  image_row_arrow = loadImage('/static/image_row_arrow.png');
   
   // Llamar a la función getmempoolData_1 cada 5 segundos
   interval_1 = setInterval(getmempoolData_1, TIME_INTERVAL);
@@ -37,22 +38,17 @@ function setup() {
   fill(255, 204);
   frameRate(3);
 
+  // loop(0.5);
+
 }
 
 function draw() {
     background(0);
 
     if (mempoolData_3) {
-
-      // Si mempoolData_3 esta vacia, salir
-      if (Object.keys(mempoolData_3).length == 0) {
-        return;
-      }
-
       txs_data_descen = [];
       txs_data_ascen = [];
 
-      // Casa
       fill(255);
       rect(0, 0, 720, 40);
       image (image_row_arrow, 0, 0, 40, 40);
@@ -113,8 +109,24 @@ function draw() {
 
       });
 
+      // fill(255, 255, 255);
+      // let txid_red = txs_data[0].txid;
+      // text ('Tx: ' + txid_red, 10, 20);
+      // for (let i = 0; i < txs_data.length; i++) {
+        
+      //   let x = 10;
+      //   let y = 40 + i*20;
+      //   if (txs_data[i].descen) {
+      //     text ('   Descen: ' + txs_data[i].descen, x+50, y + 20);
+      //   } else if (txs_data[i].ascen) {
+      //     text ('   Ascen: ' + txs_data[i].ascen, x+50, y + 20 );
+      //   }
+      // }
 
       // Dibujar un círculo en el centro del canvas que es la Tx de trabajo
+
+      // Dibujar un círculo en el centro del canvas que es la Tx de trabajo
+      let work_tx = (txs_work.tx).substring(0, 10)+ '...' + (txs_work.tx).substring((txs_work.tx).length-10, (txs_work.tx).length);
       let r = 50;
       circle(x_0, y_0, r);
       // fill(255, 255, 255);
@@ -172,60 +184,17 @@ function draw() {
 
     /////////////////////////////////////////////////////////////////
     } else if (mempoolData_2) {
-      // Si mempoolData_2 esta vacia, salir
-      if (Object.keys(mempoolData_2).length == 0) {
-        return;
-      }
-
       rects_data = [];
 
-      // Si mempoolData_2 esta vacia, salir
-      if (Object.keys(mempoolData_2).length == 0) {
-        return;
-      }
-
-      // Casa
       fill(255);
       rect(0, 0, 720, 40);
       image (image_row_arrow, 0, 0, 40, 40);
 
-      canva_memData_2 = [60, 60, 600, 500];
-
-      // Texto en ejes
-      fill(255, 255, 0);
-      text (int(max_min_weight_fees[3] * 100000000), 10, 60);
-      text ('fees' , 322, 60);
-      text (int(max_min_weight_fees[2] * 100000000), 650, 60);
-
-      push();
-      let angle = radians(90);
-      translate(10,70);
-      rotate(angle);
-      text (int(max_min_weight_fees[1] ), 0,0 );
-      pop();
-      push();
-      translate(10,320);
-      rotate(angle);
-      text ('weight' , 0, 0);
-      pop();
-      push();
-      translate(10,560);
-      rotate(angle);
-      text (int(max_min_weight_fees[0] ), 0, 0);
-      pop();
-      
+      let proyeccion =  (range_weight2 - range_weight1)/(height-40) ;
       Object.keys(mempoolData_2).forEach(key => {
-      
         fill(255, 255, 255);
-        let x = mapearPunto (mempoolData_2[key].fees_base,
-                             max_min_weight_fees[3], max_min_weight_fees[2],
-                             60, 600 ) + 40; 
-        let y = mapearPunto (mempoolData_2[key].weight, 
-                             max_min_weight_fees[1], max_min_weight_fees[0],
-                             60, 500 ) + 40;
-        
-        [x, y]= reorganiza (rects_data, x, y);
-
+        let x = mempoolData_2[key].fees_base * 10000000;
+        let y = ((mempoolData_2[key].weight)*proyeccion) + 40;
         let r = 10;
         circle(x, y, r);
 
@@ -239,69 +208,51 @@ function draw() {
         if (isMouseInsideCircle(x, y, r)) {
           fill(127);
           stroke(126);
-          if (x> 550){
-            rect(x-200, y-25, 200, 50, 10);
-            fill(255, 255, 255);
-            let redu_key = key.substring(0, 10)+ '...' + key.substring(key.length-10, key.length);
-            text ('Tx: ' + redu_key, x-190, y-10);
-            text ('Fees: ' + (mempoolData_2[key].fees_base)*100000000, x-190, y+5);
-            text ('Weight: ' + mempoolData_2[key].weight, x-190, y+20);
-          }else {
-            rect(x+10, y-25, 200, 50, 10);
-            fill(255, 255, 255);
-            let redu_key = key.substring(0, 10)+ '...' + key.substring(key.length-10, key.length);
-            text ('Tx: ' + redu_key, x+20, y-10);
-            text ('Fees: ' + (mempoolData_2[key].fees_base)*100000000, x+20, y+5);
-            text ('Weight: ' + mempoolData_2[key].weight, x+20, y+20);
-          }
-
+          rect(x+10, y-25, 200, 50, 10);
+          fill(255, 255, 255);
+          let redu_key = key.substring(0, 10)+ '...' + key.substring(key.length-10, key.length);
+          text ('Tx: ' + redu_key, x+20, y-10);
+          text ('Fees: ' + mempoolData_2[key].fees_base, x+20, y+5);
+          text ('Weight: ' + mempoolData_2[key].weight, x+20, y+20);
         } 
 
       });
 
 
-
-
-      //Parar el loop
-      //noLoop();
-
     /////////////////////////////////////////////////////////////////
     } else if (mempoolData_1) {
-      // Si mempoolData_1 esta vacia, salir
-      if (Object.keys(mempoolData_1).length == 0) {
-        return;
-      }
-      rects_range = [];
-      // Casa
-      fill(255);
-      rect(0, 0, 720, 40);
-      //image (image_row_arrow, 0, 0, 40, 40);
-      let x = 0;
-      let y = 0;
-      let w = width;
-      let weight_prev = 1;
-      Object.keys(mempoolData_1).forEach(key => {
-        let h = key/10;
-        fill(127);
-        rect(x, y + 42, w, h);
-        fill(255, 255, 255);
-        text (mempoolData_1[key] + ' Txs.', x+110, y+60);
-        text ('con pesos entre '+ weight_prev + ' y ' + key, x+170, y+60);
-        // Almacenar los datos de los rectangulos
-        rects_range.push({x: x, y: y+42, w: w, h: h,
-                        weight_prev: weight_prev, weight: key, 
-                        txs: mempoolData_1[key]});
-        y += h+10;     
-        weight_prev = int(key) + 1;     
-      });
+        rects_range = [];
+        let x = 0;
+        let y = 0;
+        let w = width;
+        let weight_prev = 1;
+        Object.keys(mempoolData_1).forEach(key => {
+          let h = key/10;
+
+          fill(127);
+          rect(x, y, w, h);
+
+          fill(255, 255, 255);
+          text (mempoolData_1[key] + ' Txs.', x+110, y+20);
+          text ('con pesos entre '+ weight_prev + ' y ' + key, x+170, y+20);
+
+          // Almacenar los datos de los rectangulos
+          rects_range.push({x: x, y: y, w: w, h: h,
+                          weight_prev: weight_prev, weight: key, 
+                          txs: mempoolData_1[key]});
+
+          y += h+10;     
+          weight_prev = int(key) + 1;     
+
+        });
    
     }
 
 }
 
 
-async function getmempoolData_1() {
-  await fetch('http://127.0.0.1:8000/get_range_weights_json/')
+function getmempoolData_1() {
+  fetch('http://127.0.0.1:8000/get_range_weights_json/')
     .then(response => response.json())
     .then(data => {
       mempoolData_1 = data;
@@ -311,37 +262,21 @@ async function getmempoolData_1() {
     .catch(error => console.error('Error al obtener los datos:', error));
 }
 
-async function getMempoolData_2(weight1, weight2) {
+function getMempoolData_2(weight1, weight2) {
   let url = 'http://127.0.0.1:8000/get_txs_range_weights_json/'+weight1+'/'+weight2;
-  await fetch(url)
+  fetch(url)
     .then(response => response.json())
     .then(data => {
       mempoolData_2= data;
       mempoolData_1 = null;
       mempoolData_3 = null;
-      // Iterar sobre los datos para obtener los valores maximos y minimos
-      max_min_weight_fees = [max_weight=0, min_weight=0, max_fees=0, min_fees=0];
-      Object.keys(mempoolData_2).forEach(key => {
-        if (mempoolData_2[key].weight > max_min_weight_fees[0]) {
-          max_min_weight_fees[0] = mempoolData_2[key].weight;
-        }
-        if (mempoolData_2[key].weight < max_min_weight_fees[1] || max_min_weight_fees[1] == 0) {
-          max_min_weight_fees[1] = mempoolData_2[key].weight;
-        }
-        if (mempoolData_2[key].fees_base > max_min_weight_fees[2]) {
-          max_min_weight_fees[2] = mempoolData_2[key].fees_base;
-        }
-        if (mempoolData_2[key].fees_base < max_min_weight_fees[3] || max_min_weight_fees[3] == 0) {
-          max_min_weight_fees[3] = mempoolData_2[key].fees_base;
-        }
-      });
     })
     .catch(error => console.error('Error al obtener los datos:', error));
 }
 
-async function getMempoolData_3(tx) {
+function getMempoolData_3(tx) {
   let url = 'http://127.0.0.1:8000/get_ascen_descen_for_txid_json/'+tx;
-  await fetch(url)
+  fetch(url)
     .then(response => response.json())
     .then(data => {
       mempoolData_3= data;
@@ -357,7 +292,6 @@ window.addEventListener("click", function(e) {
   // console.log(switch_process);
   x = mouseX;
   y = mouseY;
-  
 
   if (switch_process == "rangos") {
     let range = rects_range.find(rect => isMouseInsideRect(rect.x, rect.y, rect.w, rect.h));
@@ -423,27 +357,4 @@ function isMouseInsideRect(x, y, w, h) {
   } else {
     return false;
   }
-}
-
-function mapearPunto(x, a, b, c, d) {
-  return c + ((x - a) * (d - c)) / (b - a);
-}
-
-function reorganiza (rects_data, x, y){
-
-  let x_1 = x;
-  let y_1 = y;
-  let r = 10;
-  let i = 0;
-  let j = 0;
-  while (i<rects_data.length){
-    if (dist(x_1, y_1, rects_data[i].x, rects_data[i].y) < 2*r){
-      x_1 = x + 2*r + j*2*r;
-      j += 1;
-      i = 0;
-    } else {
-      i += 1;
-    }
-  }
-  return [x_1, y_1];
 }
