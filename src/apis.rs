@@ -31,7 +31,7 @@ pub fn get_index() -> HtmlContent {
                  <script src='/static/p5.min.js'></script>
              </head>
              <body>
-                <script src='/sketch_js'></script>
+                <script align='center' src='/sketch_js'></script>
              </body>
              
          </html>" 
@@ -120,11 +120,23 @@ pub fn get_range_weights_json( get_range_weights: &State<Arc<Mutex<RangeWeights>
 }
 
 
+// API - 0 con información general de la mempool
+#[get("/get_mempool_var_info_json")]
+pub fn get_mempool_var_info_json(  mempool_var_info: &State<Arc<Mutex<MempoolVarInfo>>> ) -> JsonResponse {
+
+    let mempool_var_info: std::sync::MutexGuard<'_, MempoolVarInfo> = mempool_var_info.lock().unwrap();
+  
+    // Generar JSON con last_block y txt_totales
+    let stringified_json = serde_json::to_string(&*mempool_var_info).unwrap();
+
+    JsonResponse(stringified_json)
+}
+
+
 
 /////////////////////////////////////////////////////////////////////////////////
 // APIS Auxiliares
 /////////////////////////////////////////////////////////////////////////////////
-
 
 
 
@@ -136,18 +148,6 @@ pub fn get_weight_tx_json(  get_weight_tx: &State<Arc<Mutex<WeightTX>>> ) -> Jso
     // println!("llegan: {} ", get_weight_tx.weight_tx.len() );
 
     let stringified_json = serde_json::to_string(&get_weight_tx.weight_tx).unwrap();
-    JsonResponse(stringified_json)
-}
-
-
-// API para mostrar los datos de MempoolVarInfo (last_block) en formato JSON
-#[get("/get_mempool_var_info_json")]
-pub fn get_mempool_var_info_json(  mempool_var_info: &State<Arc<Mutex<MempoolVarInfo>>> ) -> JsonResponse {
-
-    let mempool_var_info = mempool_var_info.lock().unwrap();
-    // println!("llegan: {} ", mempool_var_info.last_block );
-
-    let stringified_json = serde_json::to_string(&mempool_var_info.last_block).unwrap();
     JsonResponse(stringified_json)
 }
 

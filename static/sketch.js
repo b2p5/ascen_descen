@@ -1,7 +1,11 @@
 
+let mempoolData_0 = null;
 let mempoolData_1 = null;
 let mempoolData_2 = null;
 let mempoolData_3 = null;
+
+let txs_totales = 0;
+let txs_ascen_descen  = 0;
 
 let range_weight1 = 0;
 let range_weight2 = 0;
@@ -20,17 +24,23 @@ let switch_process = "rangos";
 
 let radio_ascen_descen = 30;
 
-let image_row_arrow = null;
+let image_back_arrow = null;
+let image_home = null;
 
 let max_min_weight_fees = [ max_weight=0, min_weight=0, max_fees=0, min_fees=0];
+
+let cabecera_y = 40;
 
 
 function setup() {
   createCanvas(720, 650);
 
-  image_row_arrow = loadImage('/static/home.jpg');
+  image_back_arrow = loadImage('/static/nack_arrow.webp');
+  image_home = loadImage('/static/home.jpg');
   
-  // Llamar a la función getmempoolData_1 cada 5 segundos
+  // Llamar a la función getmempoolData_0 y 1 cada 5 segundos
+  setInterval(getmempoolData_0, TIME_INTERVAL);
+  getmempoolData_0();
   interval_1 = setInterval(getmempoolData_1, TIME_INTERVAL);
   getmempoolData_1();
 
@@ -52,10 +62,17 @@ function draw() {
       txs_data_descen = [];
       txs_data_ascen = [];
 
-      // Casa
+      // Casa - cabecera
       fill(255);
-      rect(0, 0, 720, 40);
-      image (image_row_arrow, 0, 0, 40, 40);
+      rect(0, 0, 720, cabecera_y);
+      image (image_home, 0, 0, 40, 40);
+      image (image_back_arrow, 40, 0, 40, 40);
+      fill(0);
+      textSize(16);
+      text ('Txs de la mempool con ascen y/o descen. ' , 210, 15);
+      textSize(12);
+      text ('Txs totales: ' + txs_totales, 170, 35);
+      text ('Txs con ascen y/o descen: ' + txs_ascen_descen, 370, 35);
 
       // Centro del canvas
       let x_0 = width / 2;
@@ -184,10 +201,16 @@ function draw() {
         return;
       }
 
-      // Casa
+      // Casa -cabecera
       fill(255);
-      rect(0, 0, 720, 40);
-      image (image_row_arrow, 0, 0, 40, 40);
+      rect(0, 0, 720, cabecera_y);
+      image (image_home, 0, 0, 40, 40);
+      fill(0);
+      textSize(16);
+      text ('Txs de la mempool con ascen y/o descen. ' , 210, 15);
+      textSize(12);
+      text ('Txs totales: ' + txs_totales, 170, 35);
+      text ('Txs con ascen y/o descen: ' + txs_ascen_descen, 370, 35);
 
       canva_memData_2 = [60, 60, 600, 500];
 
@@ -219,10 +242,10 @@ function draw() {
         fill(255, 255, 255);
         let x = mapearPunto (mempoolData_2[key].fees_base,
                              max_min_weight_fees[3], max_min_weight_fees[2],
-                             60, 600 ) + 40; 
+                             60, 600 ) + cabecera_y; 
         let y = mapearPunto (mempoolData_2[key].weight, 
                              max_min_weight_fees[1], max_min_weight_fees[0],
-                             60, 500 ) + 40;
+                             60, 500 ) + cabecera_y;
         
         [x, y]= reorganiza (rects_data, x, y);
 
@@ -272,10 +295,17 @@ function draw() {
         return;
       }
       rects_range = [];
-      // Casa
+
+      // Casa -cabecera
       fill(255);
-      rect(0, 0, 720, 40);
-      //image (image_row_arrow, 0, 0, 40, 40);
+      rect(0, 0, 720, cabecera_y);
+      fill(0);
+      textSize(16);
+      text ('Txs de la mempool con ascen y/o descen. ' , 210, 15);
+      textSize(12);
+      text ('Txs totales: ' + txs_totales, 170, 35);
+      text ('Txs con ascen y/o descen: ' + txs_ascen_descen, 370, 35);
+
       let x = 0;
       let y = 0;
       let w = width;
@@ -300,6 +330,18 @@ function draw() {
 }
 
 
+async function getmempoolData_0() {
+  await fetch('http://127.0.0.1:8000/get_mempool_var_info_json/')
+    .then(response => response.json())
+    .then(data => {
+      mempoolData_0 = data;
+      txs_totales = mempoolData_0.txs_totales;
+      txs_ascen_descen = mempoolData_0.txs_ascen_descen;
+    })
+    .catch(error => console.error('Error al obtener los datos 0 :', error));
+}
+
+
 async function getmempoolData_1() {
   await fetch('http://127.0.0.1:8000/get_range_weights_json/')
     .then(response => response.json())
@@ -308,7 +350,7 @@ async function getmempoolData_1() {
       mempoolData_2 = null;
       mempoolData_3 = null;
     })
-    .catch(error => console.error('Error al obtener los datos:', error));
+    .catch(error => console.error('Error al obtener los datos 1 :', error));
 }
 
 async function getMempoolData_2(weight1, weight2) {
@@ -336,7 +378,7 @@ async function getMempoolData_2(weight1, weight2) {
         }
       });
     })
-    .catch(error => console.error('Error al obtener los datos:', error));
+    .catch(error => console.error('Error al obtener los datos 2 :', error));
 }
 
 async function getMempoolData_3(tx) {
@@ -348,7 +390,7 @@ async function getMempoolData_3(tx) {
       mempoolData_1 = null;
       mempoolData_2 = null;
     })
-    .catch(error => console.error('Error al obtener los datos:', error));
+    .catch(error => console.error('Error al obtener los datos 3 :', error));
 }
 
 
@@ -390,6 +432,13 @@ window.addEventListener("click", function(e) {
     }
     
   } else if (switch_process == "ascen_descen") {
+    let txs = isMouseInsideRect(40,0,40,40);
+    if (txs) {
+      txs_work = null;
+      switch_process = "txs" ;
+      getMempoolData_2(range_weight1, range_weight2);
+    }
+
     let ascen_descen = isMouseInsideRect(0,0,40,40);
     if (ascen_descen) {
       range_weight1 = null;

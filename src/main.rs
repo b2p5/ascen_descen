@@ -16,7 +16,7 @@ mod conex;
 mod apis;
 
 // Definición de constantes
-const SLEEP_TIME: u64 = 15;
+const SLEEP_TIME: u64 = 5;
 
 // Función principal para lanzar el servidor Rocket
 #[launch]
@@ -26,7 +26,7 @@ fn rocket() -> _ {
     let get_raw_mempool = Arc::new(Mutex::new(mempool_data::RawMempool::new()));
     let get_raw_mempool_clone: Arc<Mutex<mempool_data::RawMempool>> = Arc::clone(&get_raw_mempool);
 
-    let get_mempool_var_info = Arc::new(Mutex::new(mempool_data::MempoolVarInfo::new(String::new())));
+    let get_mempool_var_info = Arc::new(Mutex::new(mempool_data::MempoolVarInfo::new(String::new(),String::new(),String::new())));
     let get_mempool_var_info_clone: Arc<Mutex<mempool_data::MempoolVarInfo>> = Arc::clone(&get_mempool_var_info);
 
     let get_weight_tx = Arc::new(Mutex::new(mempool_data::WeightTX::new()));
@@ -41,15 +41,11 @@ fn rocket() -> _ {
         // Conexión con el nodo Bitcoin Core
         let client = conex::conex();
 
-        // Variable para almacenar txs de la mempool 
-        // anterior(txs_mempool_old y txs_mempool_new)
+        // Variable para almacenar txs_mempool_old  
         let mut txs_mempool_old: Vec<String> = Vec::new();
-        // let mut txs_mempool_new: Vec<String> = Vec::new();
 
-        // Variable para almacenar el ultimo bloque de la blockchain 
-        // que se ha procesado (last_block_processed  old y new)
+        // Variable para almacenar last_block_processed  old
         let mut last_block_processed_old = String::new();
-        // let mut last_block_processed_new = String::new();
 
 
         loop {
@@ -63,6 +59,10 @@ fn rocket() -> _ {
             let txs_mempool_new = mempool_processor::get_txs_mempool_new(&client);
 
             println!("Txs totales: {:?}", txs_mempool_new.len());
+
+            // Actualizamos el numero de txs totales en la struct MempoolVarInfo
+            get_mempool_var_info_clone.lock().unwrap().txs_totales = 
+                       txs_mempool_new.len().to_string();
             
             // Calculamos la diferencia entre txs_mempool_new y txs_mempool_old 
             // y se almacena en txs_mempool_new_not_old
@@ -134,6 +134,10 @@ fn rocket() -> _ {
             // Imprime el numero de transacciones que hay en la mempool
             println!("Txs con ascen/descen: {}", get_raw_mempool_clone.lock().unwrap().data.len());
 
+            // Actualizamos el numero de txs totales en la struct MempoolVarInfo
+            get_mempool_var_info_clone.lock().unwrap().txs_ascen_descen = 
+                 get_raw_mempool_clone.lock().unwrap().data.len().to_string();
+            
             // Calculo del tiempo transcurrido
             let duration = start.elapsed();
             println!("Tiempo transcurrido: {:?}\n", duration);

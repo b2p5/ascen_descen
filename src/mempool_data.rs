@@ -64,17 +64,22 @@ impl MempoolDat {
     }
 }
 
+
 // Estructura de datos para almacenar  datos varios de la mempool
+#[derive(Serialize, Deserialize)]
 pub struct MempoolVarInfo {
     pub last_block: String,
+    pub txs_totales: String,
+    pub txs_ascen_descen: String,
 }
 impl MempoolVarInfo {
-    pub fn new(last_block: String) -> MempoolVarInfo {
+    pub fn new(last_block: String, txs_totales:String, txs_ascen_descen: String ) -> MempoolVarInfo {
         MempoolVarInfo {
             last_block,
+            txs_totales,
+            txs_ascen_descen,
         }
     }
-
 }
 
 // Estructura de datos para almacenar weights y txs de la mempool
