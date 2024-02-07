@@ -165,5 +165,6 @@ fn rocket() -> _ {
         .manage(get_weight_tx)
         .manage(get_range_weights_clone)
         .mount("/static", FileServer::from(relative!("static")))
+        .mount("/assets", FileServer::from(relative!("assets")))
         // .attach(cors())
 }

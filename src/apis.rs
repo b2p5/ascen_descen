@@ -28,10 +28,22 @@ pub fn get_index() -> HtmlContent {
          <html>
              
              <head>
-                 <script src='/static/p5.min.js'></script>
+                <script src='/static/p5.min.js'></script>
+                <style>
+                    body, html {{
+                        height: 100%;
+                        margin: 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }}
+                    canvas {{
+                        border: 1px solid black;
+                    }}
+                </style>
              </head>
              <body>
-                <script align='center' src='/sketch_js'></script>
+                <script src='/sketch_js'></script>
              </body>
              
          </html>" 

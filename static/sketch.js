@@ -31,12 +31,22 @@ let max_min_weight_fees = [ max_weight=0, min_weight=0, max_fees=0, min_fees=0];
 
 let cabecera_y = 40;
 
+let miFuente;
+
+let imgFondo;
+
+function preload() {
+  // Carga la fuente
+  miFuente = loadFont('/assets/Ubuntu-Medium.ttf');
+  imgFondo = loadImage('/assets/imgFondo.avif');
+}
+
 
 function setup() {
   createCanvas(720, 650);
 
-  image_back_arrow = loadImage('/static/nack_arrow.webp');
-  image_home = loadImage('/static/home.jpg');
+  image_back_arrow = loadImage('/assets/nack_arrow.webp');
+  image_home = loadImage('/assets/home.png');
   
   // Llamar a la función getmempoolData_0 y 1 cada 5 segundos
   setInterval(getmempoolData_0, TIME_INTERVAL);
@@ -51,6 +61,7 @@ function setup() {
 
 function draw() {
     background(0);
+    image(imgFondo, 0, 0, width, height);
 
     if (mempoolData_3) {
 
@@ -62,21 +73,28 @@ function draw() {
       txs_data_descen = [];
       txs_data_ascen = [];
 
+      fill(127,127,127, 99);
+      rect(0, 40, 720, 610);
+
       // Casa - cabecera
       fill(255);
       rect(0, 0, 720, cabecera_y);
       image (image_home, 0, 0, 40, 40);
-      image (image_back_arrow, 40, 0, 40, 40);
+      // stroke(127);  
+      // strokeWeight(4);
+      image (image_back_arrow, 40, 1, 37, 37);
+      // strokeWeight(0);
       fill(0);
-      textSize(16);
+      textFont(miFuente, 16);
       text ('Txs de la mempool con ascen y/o descen. ' , 210, 15);
-      textSize(12);
+      textFont(miFuente, 12);
       text ('Txs totales: ' + txs_totales, 170, 35);
       text ('Txs con ascen y/o descen: ' + txs_ascen_descen, 370, 35);
 
       // Centro del canvas
       let x_0 = width / 2;
       let y_0 = height / 2;
+
 
       fill(255, 255, 0);
       text ('ASCEN ', 170, 150);
@@ -96,7 +114,9 @@ function draw() {
 
           fill(255, 255, 255);
           stroke(126);
+          strokeWeight(5);
           line(x_0, y_0, x, y);
+          strokeWeight(0);
           
           txs_data_descen.push({ txid: key,
                           descen : descen[key][i],
@@ -120,7 +140,9 @@ function draw() {
 
           fill(255, 255, 255);
           stroke(126);
+          strokeWeight(5);
           line(x_0, y_0, x, y);
+          strokeWeight(0);
 
           txs_data_ascen.push({ txid: key,
                           ascen : ascen[key][i],
@@ -132,6 +154,14 @@ function draw() {
 
 
       // Dibujar un círculo en el centro del canvas que es la Tx de trabajo
+      fill(127);
+      stroke(126);
+      rect(60, 50, 585, 30, 10);
+      textFont(miFuente, 16);
+      fill(255);
+      text (txs_work.tx , 70, 70);
+      textFont(miFuente, 12);
+
       let r = 50;
       circle(x_0, y_0, r);
       // fill(255, 255, 255);
@@ -156,7 +186,7 @@ function draw() {
         fill(255, 0, 255);
         circle(x, y, r);
         //text ('Tx: ' + txs_data[i].descen, x+20, y-10);
-        if (isMouseInsideCircle(x, y, r)) {
+        if (isMouseInsideCircle(x, y, r-15)) {
           fill(127);
           stroke(126);
           rect(x+10, y-15, 200, 30, 10);
@@ -176,8 +206,7 @@ function draw() {
         let r = radio_ascen_descen;
         fill(255, 255, 0);
         circle(x, y, r);
-        //text ('Tx: ' + txs_data[i].ascen, x+20, y-10);
-        if (isMouseInsideCircle(x, y, r)) {
+        if (isMouseInsideCircle(x, y, r-5)) {
           fill(127);
           stroke(126);
           rect(x+10, y-15, 200, 30, 10);
@@ -196,21 +225,20 @@ function draw() {
 
       rects_data = [];
 
-      // Si mempoolData_2 esta vacia, salir
-      if (Object.keys(mempoolData_2).length == 0) {
-        return;
-      }
-
       // Casa -cabecera
       fill(255);
       rect(0, 0, 720, cabecera_y);
       image (image_home, 0, 0, 40, 40);
       fill(0);
-      textSize(16);
+      textFont(miFuente, 16);
       text ('Txs de la mempool con ascen y/o descen. ' , 210, 15);
-      textSize(12);
+      textFont(miFuente, 12);
       text ('Txs totales: ' + txs_totales, 170, 35);
       text ('Txs con ascen y/o descen: ' + txs_ascen_descen, 370, 35);
+
+      // Rectangulo para el grafico de los datos
+      fill(127,127,127, 99);
+      rect(25, 65, 720, 610, 10);
 
       canva_memData_2 = [60, 60, 600, 500];
 
@@ -294,15 +322,16 @@ function draw() {
       if (Object.keys(mempoolData_1).length == 0) {
         return;
       }
+
       rects_range = [];
 
       // Casa -cabecera
       fill(255);
       rect(0, 0, 720, cabecera_y);
       fill(0);
-      textSize(16);
+      textFont(miFuente, 16);
       text ('Txs de la mempool con ascen y/o descen. ' , 210, 15);
-      textSize(12);
+      textFont(miFuente, 12);
       text ('Txs totales: ' + txs_totales, 170, 35);
       text ('Txs con ascen y/o descen: ' + txs_ascen_descen, 370, 35);
 
@@ -312,11 +341,11 @@ function draw() {
       let weight_prev = 1;
       Object.keys(mempoolData_1).forEach(key => {
         let h = key/10;
-        fill(127);
+        fill(127,127,127, 99);
         rect(x, y + 42, w, h);
         fill(255, 255, 255);
-        text (mempoolData_1[key] + ' Txs.', x+110, y+60);
-        text ('con pesos entre '+ weight_prev + ' y ' + key, x+170, y+60);
+        text (mempoolData_1[key] + ' Txs.', x+260, y+60);
+        text ('con pesos entre '+ weight_prev + ' y ' + key, x+310, y+60);
         // Almacenar los datos de los rectangulos
         rects_range.push({x: x, y: y+42, w: w, h: h,
                         weight_prev: weight_prev, weight: key, 
